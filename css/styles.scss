@@ -26,6 +26,10 @@ html , body {
     height: 100% ;
 }
 
+body{
+    background-color: #f8fffe;
+}
+
 ul {
     margin: 0 ;
     padding: 0 ;
@@ -50,4 +54,21 @@ a{
     &:active{
         transform: scale(.98);
     }
+}
+
+.input-style{
+    width: 100% ;
+    padding: 8px 12px ;
+    border: 1px solid #f1f1f1;
+    font-size: 16px ;
+}
+
+
+
+
+.my_container{
+    max-width: 1170px ;
+    margin: 0 auto ;
+    box-sizing: border-box;
+    padding: 0 1rem ;
 }

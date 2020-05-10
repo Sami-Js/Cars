@@ -6,12 +6,23 @@
     align-items: $align;
 }
 
+// function to rotate 
 
-.d-none{
-    display: none ;
+.rotation{
+    width: 20px ;
+    background-color: #fff ;
+    height: 20px ;
+    position: absolute;
+    content: '';
 }
+
+
 
 
 
 $fontBold : "Sans SemiBold" ;
 $fontReg : "Sans Regular";
+
+// primary Color 
+$mainColor : #142850 ;
+$btnColor : #00909e ;

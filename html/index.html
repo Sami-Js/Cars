@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- all meta for this page here  -->
     <title>New Cars, Used Cars, Car Dealers, Prices & Reviews | Cars.com</title>
+    <!-- Botstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- our styles -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
     <!-- navabar -->
-    <nav class="navbar">
-        <div class="container">
+    <nav class="nav_bar">
+        <div class="my_container">
             <!-- has logo and btn menu burger -->
             <div class="header-nav">
                 <a href="index.html" class="logo">Cars</a>
@@ -24,7 +27,7 @@
 
             <!-- has list and close btn -->
             <div class="main-nav" id="navbar">
-                <img class="icon_ close" id="closeNav" src="../assets/svg/close-outline.svg" alt="close">
+                <img class="icon_ close" id="closeNav" src="../assets/svg/close-outline.svg" alt="close_nav">
                 <ul class="nav-list">
                     <li class="list-item"><a class="list-link" href="#">Cars of Sale</a></li>
                     <li class="list-item"><a class="list-link" href="#">Sell your Car</a></li>
@@ -70,21 +73,119 @@
     </nav>
 
     <section class="head-page">
-        <div class="container">
+        <div class="my_container">
             <h1 class="address-home">Find your next match</h1>
         </div>
     </section>
 
     <section class="search-car">
-        <div class="container">
+        <div class="my_container">
             <form name="carSearch">
-                <ul class="btns-search">
-                    <li class="active"><a href="#">Search by Make</a></li>
-                    <li><a href="#">Search by body Style </a></li>
-                </ul>
+                <div class="btns_search">
+                    <ul class="btns-search">
+                        <li class="active">Search by Make</li>
+                        <li>Search by body Style </li>
+                    </ul>
+                    <a href="#" class="advanced-search">Advanced Search</a>
+                </div>
+                <div class="container-inputs">
+                    <!-- <div class="inputs-select">
+                        <select class="input-style" name="bodyCar" id="bodyCar">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div> -->
+                    <div class="inputs-select">
+                        <select class="input-style" name="carType" id="carType">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="inputs-select">
+                        <select class="input-style" name="nameCar" id="nameCar">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="inputs-select">
+                        <select class="input-style" name="modelCar" id="modelCar">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="inputs-select">
+                        <select class="input-style" name="price" id="price">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                    </div>
+                    <div class="inputs-select input-2">
+                        <select class="input-style" name="miles" id="miles">
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                            <option value="null">null</option>
+                        </select>
+                        
+                        <!-- input SerialNumber of car -->
+                        <input type="text" class="input-style" name="SerialCode" placeholder="enter your zip code">
+                    </div>
+
+                    <button type="submit" class="input-style" id="search">Search</button>
+                </div>
+                <div class="clearfix"></div>
             </form>
         </div>
     </section>
+
+    <!-- end section Fast search form  -->
+
+    <!-- section trending Cars -->
+    <section class="trendingCars">
+        <div class="my_container">
+            <h3 class="address">Trending Near You</h3>
+            
+            <div class="content-cars">  
+                <div class="car_">
+                    <img src="../assets/img/cars/Camaro.webp" alt="Camaro">
+                    <span class="address-car">
+                        Camaro Under 10,000$
+                    </span>
+                </div>
+                <div class="car_">
+                    <img src="../assets/img/cars/Camaro.webp" alt="Camaro">
+                    <span class="address-car">
+                        Camaro Under 10,000$
+                    </span>
+                </div>
+                <div class="car_">
+                    <img src="../assets/img/cars/Camaro.webp" alt="Camaro">
+                    <span class="address-car">
+                        Camaro Under 10,000$
+                    </span>
+                </div>
+                <div class="car_">
+                    <img src="../assets/img/cars/Camaro.webp" alt="Camaro">
+                    <span class="address-car">
+                        Camaro Under 10,000$
+                    </span>
+                </div>
+                <div class="car_">
+                    <img src="../assets/img/cars/Camaro.webp" alt="Camaro">
+                    <span class="address-car">
+                        Camaro Under 10,000$
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
 
 
