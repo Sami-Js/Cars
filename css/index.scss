@@ -1,0 +1,262 @@
+// has classes globaly inherit
+@import '../css/inherit.scss';
+
+
+
+.navbar{
+    width: 100% ;
+    background-color: rgb(34, 34, 102);
+    position: fixed;
+    height: 48px ;
+    top: 0;
+    left: 0;
+    .header-nav{
+        @include flexer(space-between , center);
+        position: relative;
+        height: 100% ;
+        .logo{
+            font-size: 2rem;
+            color: white ;
+        }
+
+        .icon_{
+            display: none ;
+           
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1.5rem ;
+    }
+
+    .main-nav{
+        .close{
+            display: none;
+        }
+
+        .nav-list{
+            @include flexer(center , auto );
+            .list-item{
+                padding: .8rem 0 1px;
+                align-self: stretch;
+                margin: 0 5px ;
+                .list-link{
+                    color: white ;
+                    margin: 0;
+                    font-size: 15px ;
+                    padding: 16px ;
+                    img{
+                        margin-top: -5px ;
+                    }
+                }
+
+                &:not(:nth-child(7)):hover{
+                    background-color: #ffffff33;
+                }
+                .btn{
+                    border: 1px solid rgb(233, 233, 233) ;
+                    padding: 5px 16px ;
+                    color: white;
+                    border-radius: 5px ;
+                    font-size: 13px ;
+                    transition: .2s ;
+                    margin: 0 10px ;
+                    &:hover{
+                        color: black ;
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+
+.profile{
+    position: relative;
+    transform: translateY(-5px);
+    &:hover{
+        background-color: transparent !important;
+    }
+    .content-profile{
+        visibility: hidden;
+        z-index: 1000;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid #c7c7c7;
+        top: 55px ;
+        right: -15% ;
+        width: 220px ;
+        color: black ;
+        padding: 15px ;
+        // padding: 16px 16px 0;
+        .first-section{
+            position: relative;
+            font-size: 18px ;
+            border-bottom: 1px solid #f1f1f1 ;
+            &::after{
+                width: 20px ;
+                background-color: #fff ;
+                height: 20px ;
+                position: absolute;
+                content: '';
+                top: -20px;
+                transform: rotateZ(-45deg);
+                right: -5px;
+            }
+            p , .logIn{
+                display: block;
+                padding: 0;
+                margin: 0;
+                color: #000;
+            }
+
+            .btn-secondry{
+                width: 100% ;
+                text-align: center;
+                padding: .7rem 0;
+                font-size: 18px ;
+                color: white ;
+                margin: .8rem 0;
+                border-radius: 5px ;
+                background-color: rgb(156, 39, 49) ;
+                cursor: pointer;
+            }
+
+            .logIn{
+                font-size: 14px ;
+                margin-bottom: .8rem ;
+                color: rgb(56, 55, 55);
+                a{ 
+                    color: blue ;
+                    margin: 0 ;
+                    padding: 0 ;
+                    font-family: $fontBold ;
+                }
+            }
+
+        }
+
+        .last-section{
+            width: 100% ;
+           .movement{
+               @include flexer(auto , center );
+               color: rgb(92, 92, 92) ;
+               padding: 10px 0;
+               .icon_{
+                   width: 21px ;
+                   margin-right: 15px ;
+                   opacity: .6;
+               }
+
+            &:hover{
+                color: black;
+                font-family: $fontBold ;
+                .icon_{
+                    opacity: 1;
+                }
+            }
+           }
+        }
+
+    }
+}
+
+
+.head-page{
+    height: 500px ;
+    background: linear-gradient(to top , rgba(0,0,0,.8  ) , transparent ) ,  url(../assets/img/HomePage.jpg) no-repeat center center ;
+    background-size: cover ;
+    color: white ;
+    margin-top: 3rem ;
+    .address-home{
+        max-width: 25rem ;
+        font-size: 5rem ;
+        padding-top: 1rem ;
+        line-height: .97;
+        font-family: $fontBold;
+    }
+}
+
+
+
+.container{
+    max-width: 1170px ;
+    margin: 0 auto ;
+    box-sizing: border-box;
+    padding: 0 1rem ;
+}
+
+
+
+
+@media (max-width : 1010px ){
+    
+    .main-nav{
+        z-index: 1000;
+        background-color: rgb(255, 255, 255);
+        height: 100vh ;
+        display: block;
+        position: absolute;
+        right: -50rem ;
+        width: 30% ;
+        min-width: 350px !important ;
+        border-left: 1px solid #f1f1f1 ;
+        transition: right .6s ;
+        .close{
+            display: block !important ;
+            margin-left: auto;
+            padding: .5rem 1rem ;
+        }
+
+        ul{
+            box-sizing: border-box;
+            padding: 10px ;
+            flex-direction: column-reverse;
+            li .list-link{
+                color: black !important ;
+                font-size: 17px !important  ;
+                padding-left: 0 !important ;
+            }
+
+            
+
+            li:nth-child(7){
+                display: none ;
+            }
+
+            li:last-of-type{
+                visibility: hidden;
+                height: 16rem;
+                .content-profile{
+                    visibility: visible;
+                    left: 0;
+                    border: none;
+                    top: 0;
+                    width: 90% ;
+                    padding-right: 0;
+                    padding-left: 0;
+                    border-bottom: 1px solid #f1f1f1;
+
+                    button{
+                        width: 15rem ;
+                    }
+                }                
+            }
+        }
+    }
+
+    .header-nav{
+       width: 100% ;
+    .icon_{
+        display: block !important;
+        position: absolute;
+        right: 0 ;
+        top: 7px ;
+     }
+    }
+}

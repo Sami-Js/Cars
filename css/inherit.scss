@@ -1,0 +1,17 @@
+@import '../css/styles.scss';
+
+@mixin flexer($justify , $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+.d-none{
+    display: none ;
+}
+
+
+
+$fontBold : "Sans SemiBold" ;
+$fontReg : "Sans Regular";
