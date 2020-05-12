@@ -26,3 +26,35 @@ $fontReg : "Sans Regular";
 // primary Color 
 $mainColor : #142850 ;
 $btnColor : #00909e ;
+$borderColor : #ddd ;
+
+
+
+.address{
+    font-family: $fontBold ;
+    text-align: center ;
+    margin-top: 1rem;
+    font-size: 2.1rem ;
+}
+
+.width-img{
+    width: 180px ;
+    object-fit: contain;
+}
+
+
+.btn-style{
+    margin: 2rem auto;
+    text-align: center;
+    padding: .5rem 3rem ;
+    border-radius: 3px ;
+    display: block;
+    font-size: 1.1rem;
+    font-family: $fontBold ;
+    background: $btnColor;
+    color: white ;
+    outline: none ;
+    &:active{
+        transform: scale(.98);
+    }
+}
