@@ -1,0 +1,401 @@
+@import "../inherit.scss";
+
+body {
+  overflow-x: hidden;
+}
+
+body , html{
+  height: 100% ;
+}
+
+main{
+  min-height: 100% ;
+}
+
+.address-header {
+  padding: 0.5rem 0;
+  padding-bottom: 0.8rem;
+  border: 1px solid $borderColor;
+  .address {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+}
+
+.filterContent {
+  width: 300px;
+  border: 1px solid $borderColor;
+  background-color: #fff;
+  border-top: none;
+  // display: inline-table;
+  margin-bottom: 2rem ;
+  .result {
+    margin: 1rem 0;
+    margin-top: 0;
+    padding-top: 1rem;
+    text-align: center;
+    span {
+      font-family: $fontBold;
+    }
+  }
+
+  .style-section {
+    padding: 0.8rem 1rem;
+    border-top: 1px solid $borderColor;
+
+    .address-form {
+      font-family: $fontSemiBold;
+      font-size: 16.666px;
+      display: inline-block;
+    }
+
+    .input-style {
+      border: none;
+      padding: 0;
+      margin-top: 12px;
+      width: 100%;
+      label {
+        display: block;
+        margin: 0;
+        margin-bottom: 3px;
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 5px 10px;
+        border: 1px solid $borderColor;
+      }
+    }
+
+    .input-2 {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.check-1 , .radio-btn , .input-style{
+  label {
+    color: rgb(114, 114, 114);
+  }
+
+
+  input:checked + label{
+    color: black ;
+  }
+}
+
+
+#newSearch{
+    .input-style{
+    border: none ;
+  }
+
+  .input-style:nth-child(1){
+    padding-top: 1rem ;
+  }
+  select{
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid $borderColor;
+  }
+
+  .btn-select{
+    margin: 0;
+  }
+
+}
+
+.head-btn {
+  width: 300px;
+  #Sort {
+    display: none;
+  }
+
+  label {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    width: 148.2px;
+    border-radius: 3px 3px 0 0;
+    background-color: rgb(240, 240, 240);
+    color: rgb(122, 122, 122);
+  }
+
+  .checked {
+    background-color: #fff;
+    color: black;
+    border: 1px solid $borderColor;
+    border-bottom: none;
+    font-family: $fontSemiBold;
+  }
+
+  
+}
+
+.details {
+  display: none ;
+}
+
+
+.address-inp{
+  color: black !important ;
+}
+
+
+
+// Global Change
+
+// select
+
+.appear {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select , .cb-style {
+  @extend .appear;
+  background: url(../../assets/svg/small-down-arrow-icon-15593.png);
+  background-repeat: no-repeat;
+  background-size: 16px 17px;
+  background-position: right;
+  background-origin: content-box;
+}
+
+
+.globalCss {
+  @extend .appear;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  border: 1px solid #c6c6c6;
+  color: #666;
+  top: 1px;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  margin-right: 4px;
+  outline: none;
+}
+
+// radio
+input[type="radio"] {
+  @extend .globalCss;
+  border-radius: 50%;
+  &:checked::before {
+    content: "";
+    background: $btnColor;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 1.8px;
+    left: 2px;
+    border-radius: 50%;
+  }
+}
+
+input[type="checkbox"]{
+  @extend .globalCss;
+  border-radius: 1px;
+  height: 14px;
+  width: 14px;
+  top: 2px;
+
+
+  &:checked{
+    background-color: $btnColor ;
+  }
+}
+
+
+
+
+.btn-select{
+  outline: none !important  ;
+  width: 100% ;
+  background-color: $btnColor ;
+  color: white ;
+  margin-top: 1rem ;
+  border-radius: unset ;
+  padding: .5rem 0 ;
+  text-align: center;
+  transition: transform .2s ;
+  &:active{
+    transform: scale(.98);
+  }
+
+}
+
+
+
+
+
+main .my_container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.content-cars{
+  display: inline-block;
+  width: calc(100% - 310px ) ;
+
+  .sort-cars{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 1rem ;
+    label{
+      font-family: $fontSemiBold;
+      font-size: 16px ;
+      padding-top: 5px ;
+    }
+
+    select{
+      margin-left: 10px ;
+      padding: .3rem .6rem ;
+      border: 1px solid $borderColor ;
+      background-color: rgb(255, 255, 255) !important ;
+      width: 30% !important;
+    }
+  }
+}
+
+.car-details{
+  background-color: #fff;
+  border: 1px solid $borderColor ;
+  margin-bottom: 15px ;
+  display: flex ;
+  & > *{
+    width: 50% ;
+  }
+
+  form{
+    padding: .5rem 1rem;
+    position: relative;
+
+    .btns{
+      position: absolute;
+      right: 1rem;
+      .favorite{
+        width: 16.666px;
+        margin-right: 4px ;
+        fill: transparent;
+        stroke: rgb(61, 61, 61);
+        cursor: pointer;
+        transition: fill .5s ;
+      }
+
+      .favorite:active{
+        transform: scale(1.1);
+      }
+
+      .fill{
+        fill: red ;
+      }
+
+      label:nth-child(2){
+        margin-right: 10px ;
+      }
+    }
+
+    span{
+      font-size: 15px ;
+      font-family: $fontSemiBold;
+      color: rgb(110, 109, 109);
+    }
+
+    .desc-car{
+      .Used{
+        display: block ;
+        color: rgb(30, 30, 196) !important ;
+        margin-bottom: 2px ;
+        text-transform: uppercase;
+      }
+      .price{
+        display: inline;
+        padding-right: 10px ;        
+      }
+
+      .mile{
+        border-left: 1px solid $borderColor ;
+        padding-left: 5px ;
+      }
+
+      .nameCar{
+        font-family: $fontBold;
+        margin: 1rem 0 ;
+      }
+
+      .specific-car{
+        .keySp{
+          color: black ;
+        }
+        .ValueSP{
+          font-family: $fontReg;
+          margin-left: 5px ;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+.Features-car{
+  display: flex;
+  margin: 1rem 0;
+}
+
+
+.deal{
+  padding: .2rem .6rem ;
+  text-transform: uppercase;
+  font-size: 12px !important ;
+  margin-right: 3px ;
+  min-width: 80px ;
+  text-align: center;
+  background:$mainColor;
+  color: white !important ;
+ 
+}
+
+.great{
+  background-color: $btnColor !important ;
+}
+
+.good{
+  color: #fff !important ;
+  background-color: rgb(85, 158, 85);
+}
+
+
+.btn-call{
+  display: none ;
+}
+
+.cb-style{
+  float: right;
+  cursor: pointer;
+  background-position: center center;
+  border: none !important  ;
+  transition: transform .2s ;
+  &:checked:before{
+    background-image: none !important;
+  }
+
+  &:checked{
+    transform: rotate(180deg);
+    background-color: transparent !important ;
+  }
+
+  &:checked + .details{
+    display: block ;
+  }
+
+
+}
