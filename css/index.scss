@@ -15,7 +15,7 @@
     font-size: 5rem;
     padding-top: 1rem;
     line-height: 0.97;
-    font-family: $fontSemiBold;
+    font-family: $fontBold;
   }
 }
 
@@ -153,7 +153,7 @@
       margin-right: 3%;
       h6 {
         text-align: center;
-        font-family: $fontSemiBold;
+        font-family: $fontBold;
         color: $btnColor;
       }
 
@@ -197,7 +197,7 @@
 
     .address-article {
       margin: 10px 0;
-      font-family: $fontSemiBold;
+      font-family: $fontBold;
       color: black;
       font-size: 17px;
     }
@@ -209,7 +209,7 @@
       margin-top: 10px;
       a {
         color: $btnColor;
-        font-family: $fontSemiBold;
+        font-family: $fontBold;
       }
     }
 
@@ -226,7 +226,7 @@
 
         span:nth-child(1) {
           color: black;
-          font-family: $fontSemiBold;
+          font-family: $fontBold;
         }
 
         span:nth-child(2) {
@@ -240,7 +240,7 @@
   .more-articles {
     .more-para {
       font-size: 2rem;
-      font-family: $fontSemiBold;
+      font-family: $fontBold;
       color: rgb(155, 153, 153);
       text-align: center;
       margin: 2rem 0;
@@ -261,7 +261,7 @@
 
     .address-search{
         margin-top: 3rem ;
-        font-family: $fontSemiBold;
+        font-family: $fontBold;
     }
     
     a{

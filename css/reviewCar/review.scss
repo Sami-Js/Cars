@@ -1,0 +1,378 @@
+@import "../forSell/index.scss";
+@import "../styles.scss";
+
+.content-filter {
+  border: 1px solid $borderColor;
+  padding: 1rem;
+  background-color: #fff;
+  box-sizing: content-box;
+  width: 350px !important ;
+  margin-bottom: 5rem;
+  align-self: flex-start;
+}
+
+.input-style {
+  padding: 0;
+  border: none;
+  input:not([type="checkbox"]),
+  select,
+  textarea {
+    border: 1px solid rgb(204, 204, 204);
+    padding: 0.4rem 0.6rem;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #fff !important ;
+    &:focus {
+      outline: 2px solid rgba(8, 8, 248, 0.377);
+    }
+  }
+
+  label {
+    margin-bottom: 5px;
+    color: black;
+    font-family: $fontBold;
+  }
+}
+
+// contact seller Style
+.contact-seller {
+  text-align: center;
+  color: $btnColor;
+  .address-call {
+    font-family: $fontBold;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  #phone {
+    font-family: $fontBold;
+    color: rgb(0, 0, 0) !important ;
+    font-size: 19px;
+    img {
+      width: 12px;
+      margin-right: 2px;
+      border: 1px solid rgb(102, 102, 102);
+      border-radius: 50%;
+      padding: 3px;
+      box-sizing: content-box;
+      //   opacity: .5;
+    }
+  }
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+.labels-contact {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid $borderColor;
+  & > * {
+    text-align: center;
+    font-size: 19px;
+    margin: 0 1rem;
+    color: grey;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .active {
+    font-family: $fontBold;
+    border-bottom: 3px solid $btnColor;
+    color: black;
+    padding: 0 8px 8px;
+  }
+}
+
+.tradeResult {
+  #trade {
+    font-size: 15px !important ;
+    font-family: $fontReg;
+    margin-bottom: 1rem;
+    color: rgb(122, 122, 122);
+  }
+
+  #tradeIN:checked {
+    & + #trade {
+      color: black;
+    }
+
+    & ~ #tradeR {
+      display: block;
+    }
+  }
+
+  #tradeR {
+    display: none;
+  }
+
+  .input-2 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    & > * {
+      width: 49% !important;
+    }
+  }
+}
+
+.Select-employee {
+  margin: 1rem 0;
+  label {
+    text-align: center;
+    display: block;
+  }
+
+  .name-emp {
+    text-align: center;
+    margin: 0;
+    font-family: $fontBold;
+    font-size: 19px;
+  }
+
+  .job-name {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    font-family: $fontBold;
+    color: grey;
+  }
+
+  .list-employee {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    & > * {
+      width: 50px;
+      cursor: pointer;
+      padding: 2px;
+      margin: 0 3px;
+      border-radius: 50%;
+      opacity: 0.4;
+    }
+
+    .active {
+      opacity: 1;
+      border: 1px solid blue;
+    }
+  }
+}
+
+// .container-all-details {
+//   display: flex;
+//   justify-content: space-between;
+//   .details-car {
+//     width: calc(100% - 400px);
+//   }
+// }
+
+main .my_container {
+  display: block;
+  margin-top: 0 ;
+}
+
+.back-page{
+  margin: 1rem 0;
+  a{
+    font-size: 18px ;
+    font-family: $fontBold;
+    color: $btnColor;
+    display: block;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid $borderColor ;
+  }
+
+  i{
+    margin-right: 10px ;
+  }
+}
+
+.pics-car {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 5px;
+  border: 1px solid $borderColor;
+  & > * {
+    width: 100px;
+    margin-right: 10px;
+  }
+}
+
+.info-car {
+  background-color: #fff;
+  border: 1px solid $borderColor;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: calc(100% - 400px);
+  display: flow-root;
+}
+
+.info-seller {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0;
+  .btn-save {
+    align-self: center;
+    padding: 7px 25px;
+    background: white;
+    color: rgb(68, 67, 67);
+    text-align: center;
+    font-size: 18px;
+    svg {
+      width: 25px;
+      height: 22px;
+      fill: transparent;
+      stroke: black;
+      stroke-width: 15px;
+    }
+  }
+}
+
+#price {
+  font-size: 2.2rem;
+  font-family: $fontBold;
+  margin: 0.5rem 0;
+}
+
+#soldBy {
+  font-size: 1.2rem;
+  .sold_by {
+    font-family: $fontBold;
+    color: rgb(80, 79, 79);
+  }
+
+  .name-sold {
+    font-family: $fontBold;
+  }
+
+  .location {
+    display: inline-block;
+    margin-left: 2rem;
+    svg {
+      width: 17px;
+      height: 16px;
+      fill: rgb(37, 99, 214);
+      stroke: transparent;
+    }
+  }
+}
+
+#ratingVote {
+  margin: 0.2rem 0;
+  padding-bottom: 1rem;
+  .fa-star {
+    cursor: pointer;
+  }
+  .filler {
+    color: rgb(231, 175, 21);
+  }
+
+  #rating {
+    margin: 0 10px;
+    margin-left: 5px;
+  }
+
+  #linkVoter {
+    font-family: $fontBold;
+    font-size: 14px;
+    #lengthVoter {
+      margin-right: 2px;
+    }
+  }
+}
+
+.address-car {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: $fontBold;
+  font-size: 1.7rem;
+}
+
+#basics {
+  .address-car {
+    margin-bottom: 0.2rem;
+  }
+  .content-list {
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      width: 350px;
+      list-style: disc;
+      padding: 0 1rem;
+    }
+  }
+}
+
+#property-car {
+  display: flex;
+  flex-wrap: wrap;
+  & > * {
+    width: 350px;
+  }
+  ul {
+    list-style: disc;
+    padding: 1.2rem;
+    padding-top: 0;
+  }
+}
+
+.property {
+  font-family: $fontBold;
+}
+
+.carousel {
+  width: calc(100% - 400px);
+  float: left;
+  border: 1px solid $borderColor;
+  border-bottom: none;
+  background: white;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.info-content {
+  padding: 1rem;
+}
+
+#info-contact {
+  width: 300px;
+  float: right;
+}
+
+@media (max-width: 930px) {
+  .carousel , .info-car , .content-filter {
+    float: none !important  ;
+    width: 100% !important ;
+  }
+
+
+  #info-contact{
+    box-sizing: border-box;
+    margin: 0;
+    border-bottom: none ;
+    .input-2{
+      display: flex;
+      justify-content: space-between;
+
+      & > * {
+        width: 49% !important  ;
+      }
+    }
+  }
+
+  
+
+  
+}

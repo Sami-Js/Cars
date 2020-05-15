@@ -906,4 +906,487 @@ main .my_container {
 .cb-style:checked + .details {
   display: block;
 }
-/*# sourceMappingURL=index.css.map */
+
+@font-face {
+  src: url(../assets/font/SourceSansPro-Regular.ttf);
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+  font-family: "Sans SemiBold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-family: "Sans Regular";
+}
+
+.d-none {
+  display: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f8fffe;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.icon_ {
+  width: 30px;
+  cursor: pointer;
+}
+
+.btn-effect:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.input-style {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #f1f1f1;
+  font-size: 16px;
+}
+
+.my_container {
+  max-width: 1170px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+.content-filter {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #fff;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 350px !important;
+  margin-bottom: 5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.input-style {
+  padding: 0;
+  border: none;
+}
+
+.input-style input:not([type="checkbox"]),
+.input-style select,
+.input-style textarea {
+  border: 1px solid #cccccc;
+  padding: 0.4rem 0.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 10px;
+  background-color: #fff !important;
+}
+
+.input-style input:not([type="checkbox"]):focus,
+.input-style select:focus,
+.input-style textarea:focus {
+  outline: 2px solid rgba(8, 8, 248, 0.377);
+}
+
+.input-style label {
+  margin-bottom: 5px;
+  color: black;
+  font-family: "Sans SemiBold";
+}
+
+.contact-seller {
+  text-align: center;
+  color: #00909e;
+}
+
+.contact-seller .address-call {
+  font-family: "Sans SemiBold";
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+.contact-seller #phone {
+  font-family: "Sans SemiBold";
+  color: black !important;
+  font-size: 19px;
+}
+
+.contact-seller #phone img {
+  width: 12px;
+  margin-right: 2px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  padding: 3px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+::-webkit-inner-spin-button {
+  display: none;
+}
+
+.labels-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.labels-contact > * {
+  text-align: center;
+  font-size: 19px;
+  margin: 0 1rem;
+  color: grey;
+  cursor: pointer;
+}
+
+.labels-contact > *:hover {
+  color: black;
+}
+
+.labels-contact .active {
+  font-family: "Sans SemiBold";
+  border-bottom: 3px solid #00909e;
+  color: black;
+  padding: 0 8px 8px;
+}
+
+.tradeResult #trade {
+  font-size: 15px !important;
+  font-family: "Sans Regular";
+  margin-bottom: 1rem;
+  color: #7a7a7a;
+}
+
+.tradeResult #tradeIN:checked + #trade {
+  color: black;
+}
+
+.tradeResult #tradeIN:checked ~ #tradeR {
+  display: block;
+}
+
+.tradeResult #tradeR {
+  display: none;
+}
+
+.tradeResult .input-2 {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tradeResult .input-2 > * {
+  width: 49% !important;
+}
+
+.Select-employee {
+  margin: 1rem 0;
+}
+
+.Select-employee label {
+  text-align: center;
+  display: block;
+}
+
+.Select-employee .name-emp {
+  text-align: center;
+  margin: 0;
+  font-family: "Sans SemiBold";
+  font-size: 19px;
+}
+
+.Select-employee .job-name {
+  text-align: center;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Sans SemiBold";
+  color: grey;
+}
+
+.Select-employee .list-employee {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.Select-employee .list-employee > * {
+  width: 50px;
+  cursor: pointer;
+  padding: 2px;
+  margin: 0 3px;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.Select-employee .list-employee .active {
+  opacity: 1;
+  border: 1px solid blue;
+}
+
+main .my_container {
+  display: block;
+  margin-top: 0;
+}
+
+.back-page {
+  margin: 1rem 0;
+}
+
+.back-page a {
+  font-size: 18px;
+  font-family: "Sans SemiBold";
+  color: #00909e;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-page i {
+  margin-right: 10px;
+}
+
+.pics-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+}
+
+.pics-car > * {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.info-car {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: calc(100% - 400px);
+  display: flow-root;
+}
+
+.info-seller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.2rem 0;
+}
+
+.info-seller .btn-save {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 7px 25px;
+  background: white;
+  color: #444343;
+  text-align: center;
+  font-size: 18px;
+}
+
+.info-seller .btn-save svg {
+  width: 25px;
+  height: 22px;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 15px;
+}
+
+#price {
+  font-size: 2.2rem;
+  font-family: "Sans SemiBold";
+  margin: 0.5rem 0;
+}
+
+#soldBy {
+  font-size: 1.2rem;
+}
+
+#soldBy .sold_by {
+  font-family: "Sans SemiBold";
+  color: #504f4f;
+}
+
+#soldBy .name-sold {
+  font-family: "Sans SemiBold";
+}
+
+#soldBy .location {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+#soldBy .location svg {
+  width: 17px;
+  height: 16px;
+  fill: #2563d6;
+  stroke: transparent;
+}
+
+#ratingVote {
+  margin: 0.2rem 0;
+  padding-bottom: 1rem;
+}
+
+#ratingVote .fa-star {
+  cursor: pointer;
+}
+
+#ratingVote .filler {
+  color: #e7af15;
+}
+
+#ratingVote #rating {
+  margin: 0 10px;
+  margin-left: 5px;
+}
+
+#ratingVote #linkVoter {
+  font-family: "Sans SemiBold";
+  font-size: 14px;
+}
+
+#ratingVote #linkVoter #lengthVoter {
+  margin-right: 2px;
+}
+
+.address-car {
+  margin: 0;
+  margin-top: 2rem;
+  font-family: "Sans SemiBold";
+  font-size: 1.7rem;
+}
+
+#basics .address-car {
+  margin-bottom: 0.2rem;
+}
+
+#basics .content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#basics .content-list ul {
+  width: 350px;
+  list-style: disc;
+  padding: 0 1rem;
+}
+
+#property-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#property-car > * {
+  width: 350px;
+}
+
+#property-car ul {
+  list-style: disc;
+  padding: 1.2rem;
+  padding-top: 0;
+}
+
+.property {
+  font-family: "Sans SemiBold";
+}
+
+.carousel {
+  width: calc(100% - 400px);
+  float: left;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  background: white;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.info-content {
+  padding: 1rem;
+}
+
+#info-contact {
+  width: 300px;
+  float: right;
+}
+
+@media (max-width: 930px) {
+  .carousel, .info-car, .content-filter {
+    float: none !important;
+    width: 100% !important;
+  }
+  #info-contact {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    border-bottom: none;
+  }
+  #info-contact .input-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #info-contact .input-2 > * {
+    width: 49% !important;
+  }
+}
+/*# sourceMappingURL=review.css.map */

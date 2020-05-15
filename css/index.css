@@ -8,11 +8,6 @@
   font-family: "Sans SemiBold";
 }
 
-@font-face {
-  src: url(../assets/font/SourceSansPro-Bold.ttf);
-  font-family: "Sans Bold";
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +77,7 @@ a {
 }
 
 .address {
-  font-family: "Sans Bold";
+  font-family: "Sans SemiBold";
   text-align: center;
   margin-top: 1rem;
   font-size: 2.1rem;
@@ -101,7 +96,7 @@ a {
   border-radius: 3px;
   display: block;
   font-size: 1.1rem;
-  font-family: "Sans Bold";
+  font-family: "Sans SemiBold";
   background: #00909e;
   color: white;
   outline: none;
@@ -278,7 +273,7 @@ a {
   color: blue;
   margin: 0;
   padding: 0;
-  font-family: "Sans Bold";
+  font-family: "Sans SemiBold";
 }
 
 .profile .content-profile .last-section {
@@ -307,7 +302,7 @@ a {
 
 .profile .content-profile .last-section .movement:hover {
   color: black;
-  font-family: "Sans Bold";
+  font-family: "Sans SemiBold";
 }
 
 .profile .content-profile .last-section .movement:hover .icon_ {
@@ -396,7 +391,7 @@ footer .content-about {
 }
 
 footer .content-about .address-about {
-  font-family: "Sans Bold";
+  font-family: "Sans SemiBold";
   font-size: 18px;
   margin-bottom: .5rem;
 }
