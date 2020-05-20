@@ -84,6 +84,26 @@ main {
   content: '';
 }
 
+.btn-select {
+  outline: none !important;
+  width: 100%;
+  background-color: #00909e;
+  color: white;
+  margin-top: 1rem;
+  border-radius: unset;
+  padding: .5rem 0;
+  text-align: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.btn-select:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 .address {
   font-family: "Sans SemiBold";
   text-align: center;
@@ -111,26 +131,6 @@ main {
 }
 
 .btn-style:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.btn-select {
-  outline: none !important;
-  width: 100%;
-  background-color: #00909e;
-  color: white;
-  margin-top: 1rem;
-  border-radius: unset;
-  padding: .5rem 0;
-  text-align: center;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.btn-select:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }

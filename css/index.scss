@@ -394,6 +394,88 @@ main{
 
 
 
+// about page research 
+.container-research{
+  & > * {
+    width: 25% ;
+  }
+}
+
+.researchCar{
+  background:transparent ;
+}
+
+.content-research{
+  display: block;
+  padding-top: 8rem ;
+  h1 , p {
+    text-align: center;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  h1{
+    font-size: 2.8rem;
+    font-family: $fontBold;
+  }
+
+  p{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: rgb(209, 208, 208);
+  }
+}
+
+
+.tools-advice{
+  border-top: 1px solid $borderColor ;
+  padding-top: 1rem ;
+  .text-muted{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+  .container-choices{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-items: center;
+    .box-content{
+      box-sizing: border-box;
+      padding: 1.5rem;
+      margin: .5rem 0;
+      background: rgb(240, 240, 240);
+      color: black ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 200px;
+      transition: box-shadow .5s ;
+      &:hover{
+        box-shadow: 13px 14px 39px -17px rgba(0,0,0,0.4);
+
+      }
+      img{
+        width: 35px ;
+        opacity: .6;
+        margin-bottom: .5rem ;
+      }
+      h6{
+        font-family: $fontBold;
+      text-align: center;
+      }
+
+      .linker{
+        color: rgb(36, 36, 199) ;
+        font-size: 13px ;
+        text-align: center ;
+      }
+    }
+  }
+}
+
 
 
 

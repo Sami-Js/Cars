@@ -897,6 +897,107 @@ main {
   color: #2121c7;
 }
 
+.container-research > * {
+  width: 25%;
+}
+
+.researchCar {
+  background: transparent;
+}
+
+.content-research {
+  display: block;
+  padding-top: 8rem;
+}
+
+.content-research h1, .content-research p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content-research h1 {
+  font-size: 2.8rem;
+  font-family: "Sans SemiBold";
+}
+
+.content-research p {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #d1d0d0;
+}
+
+.tools-advice {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.tools-advice .text-muted {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.tools-advice .container-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: center;
+}
+
+.tools-advice .container-choices .box-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.5rem;
+  margin: .5rem 0;
+  background: #f0f0f0;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+
+.tools-advice .container-choices .box-content:hover {
+  -webkit-box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+          box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+}
+
+.tools-advice .container-choices .box-content img {
+  width: 35px;
+  opacity: .6;
+  margin-bottom: .5rem;
+}
+
+.tools-advice .container-choices .box-content h6 {
+  font-family: "Sans SemiBold";
+  text-align: center;
+}
+
+.tools-advice .container-choices .box-content .linker {
+  color: #2424c7;
+  font-size: 13px;
+  text-align: center;
+}
+
 @media (max-width: 850px) {
   .container-inputs > * {
     width: 50%;

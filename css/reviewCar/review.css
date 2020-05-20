@@ -68,12 +68,40 @@ a {
   padding: 0 1rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100%;
+}
+
 .rotation, .profile .content-profile .first-section::after {
   width: 20px;
   background-color: #fff;
   height: 20px;
   position: absolute;
   content: '';
+}
+
+.btn-select {
+  outline: none !important;
+  width: 100%;
+  background-color: #00909e;
+  color: white;
+  margin-top: 1rem;
+  border-radius: unset;
+  padding: .5rem 0;
+  text-align: center;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.btn-select:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .address {
@@ -514,16 +542,8 @@ a {
   padding: 0 1rem;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 body, html {
   height: 100%;
-}
-
-main {
-  min-height: 100%;
 }
 
 .address-header {
@@ -704,26 +724,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   background-color: #00909e;
-}
-
-.btn-select {
-  outline: none !important;
-  width: 100%;
-  background-color: #00909e;
-  color: white;
-  margin-top: 1rem;
-  border-radius: unset;
-  padding: .5rem 0;
-  text-align: center;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-}
-
-.btn-select:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
 }
 
 main .my_container {
