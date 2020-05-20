@@ -2,6 +2,11 @@
 @import "../css/inherit.scss";
 
 
+
+main{
+  min-height: 60% ;
+}
+
 .head-page {
   height: 415px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
@@ -270,6 +275,132 @@
         display: block ;
     }
 }
+
+
+
+// for page Sign in , Sign up
+
+.header-label{
+  text-align: center ;
+  padding: 2rem 0 ;
+  padding-bottom: 0 ;
+  font-size: 1.2666rem ;
+  border-bottom: 1px solid $borderColor;
+
+  label{
+    padding: 1rem ;
+    padding-bottom: .5rem ;
+    margin: 0 10px ;
+    color: grey;
+    cursor: pointer;
+    &:hover{
+      color: black ;
+    }
+  }
+
+  .active{
+    color: black ;
+    font-family: $fontBold;
+    border-bottom: 3px solid $btnColor;
+  }
+}
+
+
+
+
+
+.btn-facebook{
+  margin: 1.5rem 0 ;
+  display: inline-block;
+  background-color: rgb(63, 63, 160) ;
+  color: white;
+  padding: .5rem 4rem ;
+  border-radius: 3px ;
+  &:hover{
+    color: white;
+  }
+}
+
+
+.container-signup , .container-signin{
+  text-align: center;
+}
+
+.content-form{
+  position: relative;
+  margin: 0 auto ;
+  max-width: 656px;
+  .line-or{
+    width: 100% ;
+    border-top: 1px solid $borderColor ;
+    text-align: center;
+    span{
+      display: inline-block;
+      background:rgb(255, 255, 255) ;
+      padding: 0px 5px ;
+      transform: translateY(-12px );
+    }
+  }
+
+  form{
+    max-width: 328px ;
+    margin: 0 auto ;
+    .address-form{
+      font-family: $fontBold;
+      margin-bottom: 1.6rem ;
+    }
+  }
+
+  .input-style{
+    border: none ;
+    padding: 0;
+    margin-bottom: .6rem ;
+    label{
+      font-family: $fontBold;
+      margin-top: 1rem ;
+      color: rgb(61, 60, 60);
+      margin: 0;
+      margin-bottom: 3px ;
+    }
+  
+    input{
+      padding: .5rem 1rem ;
+      border: 1px solid $borderColor ;
+    }
+
+  }
+
+  
+  .btn-signup{
+    background-color: rgb(138, 58, 58);
+ 
+  }
+
+  .btn-select{
+    margin-bottom: 5rem ;
+  }
+
+  .forget-pass{
+    background:transparent ;
+    color: rgb(112, 110, 110) ;
+    &:hover{
+      color: rgb(33, 33, 199);
+
+    }
+  }
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

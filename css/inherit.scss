@@ -14,7 +14,14 @@ $borderColor : #ddd ;
     align-items: $align;
 }
 
-// function to rotate 
+
+body {
+  overflow-x: hidden;
+}
+
+main{
+  min-height: 100% ;
+}
 
 .rotation{
     width: 20px ;
@@ -23,6 +30,24 @@ $borderColor : #ddd ;
     position: absolute;
     content: '';
 }
+
+
+.btn-select{
+  outline: none !important  ;
+  width: 100% ;
+  background-color: $btnColor ;
+  color: white ;
+  margin-top: 1rem ;
+  border-radius: unset ;
+  padding: .5rem 0 ;
+  text-align: center;
+  transition: transform .2s ;
+  &:active{
+    transform: scale(.98);
+  }
+
+}
+
 
 
 
@@ -54,6 +79,8 @@ $borderColor : #ddd ;
         transform: scale(.98);
     }
 }
+
+
 
 
 

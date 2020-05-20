@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- Botstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- our styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+</head>
+
+<body>
+    <nav class="nav_bar">
+        <div class="my_container">
+            <!-- has logo and btn menu burger -->
+            <div class="header-nav">
+                <a href="index.html" class="logo">Cars</a>
+
+                <img class="icon_" src="../assets/svg/menu-outline.svg" id="show_nav" alt="Menu">
+            </div>
+            <!-- has list and close btn -->
+            <div class="main-nav" id="navbar">
+                <img class="icon_ close" id="closeNav" src="../assets/svg/close-outline.svg" alt="close_nav">
+                <ul class="nav-list">
+                    <li class="list-item"><a class="list-link" href="#">Cars of Sale</a></li>
+                    <li class="list-item"><a class="list-link" href="#">Sell your Car</a></li>
+                    <li class="list-item"><a class="list-link" href="#">Service & Repair</a></li>
+                    <li class="list-item"><a class="list-link" href="#">Research</a></li>
+                    <li class="list-item"><a class="list-link" href="#">Videos & Reviews</a></li>
+                    <li class="list-item"><a class="list-link" href="#">Contact Us</a></li>
+                    <li class="list-item">
+                        <a href="#" class="btn btn-effect">Sign Up</a></li>
+                    <li class="list-item profile" id="profile"><a href="#">
+                            <img class="icon_" src="../assets/svg/Profile.svg" alt="Profile">
+                        </a>
+                        <div class="content-profile" data-modal='false' id="content-profile">
+                            <div class="first-section">
+                                <p class="text-mute">
+                                    Save cars. Access them anywhere.
+                                </p>
+                                <button class="btn-secondry btn-effect">Sign Up</button>
+                                <span class="logIn">
+                                    Already have an account? <a href="#">Log In</a>
+                                </span>
+                            </div>
+
+                            <div class="last-section">
+                                <a href="#" class="movement">
+                                    <img class="icon_" src="../assets/svg/person.svg" alt="Dashboard">
+                                    <span> My Dashboard</span>
+                                </a>
+                                <a href="#" class="movement">
+                                    <img class="icon_" src="../assets/svg/car.svg" alt="saved-car">
+                                    <span>My Car Saved (<span>5</span>)</span>
+                                </a>
+                                <a href="#" class="movement">
+                                    <img class="icon_" src="../assets/svg/search.svg" alt="Search-save">
+                                    <span>My Car Saved (<span>5</span>)</span>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container-sign">
+        <div class="my_container">
+            <div class="header-label">
+                <label class="active">Log in</label>
+                <label>Sign Up</label>
+            </div>
+
+            <div class="container-signup">
+                <a href="#" class="btn-facebook">Sign Up With Facebook</a>
+
+                <div class="content-form">
+                    <div class="line-or">
+                        <span>OR</span>
+                    </div>
+                    <form id="SignUp">
+                        <h5 class="address-form">Sign Up With Email</h5>
+
+                        <div class="input-style">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="enter your mail" class="input-style">
+                        </div>
+                        <div class="input-style">
+                            <label for="Password">Password</label>
+                            <input id="Password" type="password" placeholder="enter your Password" class="input-style">
+                        </div>
+                        <div class="input-style">
+                            <label for="confirmP">Confirm Password</label>
+                            <input id="confirmP" type="password" placeholder="repeat Password" class="input-style">
+                        </div>
+
+                        <button class="btn-select btn-signup">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container-signin d-none">
+                <a href="#" class="btn-facebook">Sign in With Facebook</a>
+
+                <div class="content-form">
+                    <div class="line-or">
+                        <span>OR</span>
+                    </div>
+                    <form id="SignIn">
+                        <h5 class="address-form">Log in With Email</h5>
+
+                        <div class="input-style">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" placeholder="enter your mail" class="input-style">
+                        </div>
+                        <div class="input-style">
+                            <label for="Password">Password</label>
+                            <input id="Password" type="password" placeholder="enter your Password" class="input-style">
+                            <button class="forget-pass">Forget Password ?</button>
+                        </div>
+                        <button class="btn-select">Sign in</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+    <!-- finaly footer -->
+    <footer class="last-section">
+        <div class="about-website">
+            <div class="my_container">
+                <ul class="content-about">
+                    <li class="address-about">Buying & Selling </li>
+                    <li class="about-link"><a href="#">Find a Car</a></li>
+                    <li class="about-link"><a href="#">Certified Pre-Owned</a></li>
+                    <li class="about-link"><a href="#">Sell Your Car</a></li>
+                    <li class="about-link"><a href="#">Car Books Values</a></li>
+                    <li class="about-link"><a href="#">Car Dealers</a></li>
+                    <li class="about-link"><a href="#">Company Car Price</a></li>
+                    <li class="about-link"><a href="#">Listinig by City</a></li>
+                </ul>
+
+                <ul class="content-about">
+                    <li class="address-about">Our Partnes</li>
+                    <li class="about-link"><a href="#">Car Dealers</a></li>
+                    <li class="about-link"><a href="#">Company Car Price</a></li>
+                    <li class="about-link"><a href="#">Listinig by City</a></li>
+                </ul>
+
+                <div class="social-media">
+                    <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+                        <title>ionicons-v5_logos</title>
+                        <path
+                            d='M349.33,69.33a93.62,93.62,0,0,1,93.34,93.34V349.33a93.62,93.62,0,0,1-93.34,93.34H162.67a93.62,93.62,0,0,1-93.34-93.34V162.67a93.62,93.62,0,0,1,93.34-93.34H349.33m0-37.33H162.67C90.8,32,32,90.8,32,162.67V349.33C32,421.2,90.8,480,162.67,480H349.33C421.2,480,480,421.2,480,349.33V162.67C480,90.8,421.2,32,349.33,32Z' />
+                        <path d='M377.33,162.67a28,28,0,1,1,28-28A27.94,27.94,0,0,1,377.33,162.67Z' />
+                        <path
+                            d='M256,181.33A74.67,74.67,0,1,1,181.33,256,74.75,74.75,0,0,1,256,181.33M256,144A112,112,0,1,0,368,256,112,112,0,0,0,256,144Z' />
+                    </svg>
+
+                    <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+                        <title>ionicons-v5_logos</title>
+                        <path
+                            d='M496,347.21a190.31,190.31,0,0,1-32.79-5.31c-27.28-6.63-54.84-24.26-68.12-52.43-6.9-14.63-2.64-18.59,11.86-24,14.18-5.27,29.8-7.72,36.86-23,5.89-12.76,1.13-27.76-10.41-35.49-15.71-10.53-30.35-.21-46.62,2.07,3.73-46.66,8.66-88.57-22.67-127.73C338.14,48.86,297.34,32,256.29,32S174.43,48.86,148.48,81.33c-31.38,39.26-26.4,81.18-22.67,127.92C109.49,207,95,196.46,79.18,207.07c-14.72,9.85-17,29.76-5.44,43s31.64,9.5,43.45,20.6c6.49,6.09,3.49,12.61-.35,20.14-14.48,28.4-39.26,45.74-69.84,51.56-4,.76-22.31,2.87-31,3.65,0,9.28.52,16.78,1.63,21.73,2.94,13.06,12.32,23.58,23.69,30.1C52.5,404.25,76.8,404.28,83,413.36c3,4.48,1.76,12.28,5.33,17.38a23.8,23.8,0,0,0,15.37,9.75c18.61,3.61,37.32-7.2,56.42-2.1,14.85,3.95,26.52,15.87,39.26,24,15.51,9.85,32.34,16.42,50.83,17.49,38.1,2.21,59.93-18.91,90.58-36.42,19.5-11.14,38.15-3.86,58.88-2.68,20.1,1.15,23.53-9.25,29.62-24.88a27.37,27.37,0,0,0,1.54-4.85,10.52,10.52,0,0,0,2.28-1.47c2-1.57,10.55-2.34,12.76-2.86,10.28-2.44,20.34-5.15,29.17-11.2,11.31-7.76,17.65-18.5,19.58-32.64A93.73,93.73,0,0,0,496,347.21ZM208,128c8.84,0,16,10.74,16,24s-7.16,24-16,24-16-10.74-16-24S199.16,128,208,128Zm103.62,77.7c-15.25,15-35,23.3-55.62,23.3a78.37,78.37,0,0,1-55.66-23.34,8,8,0,0,1,11.32-11.32A62.46,62.46,0,0,0,256,213c16.39,0,32.15-6.64,44.39-18.7a8,8,0,0,1,11.23,11.4ZM304,176c-8.84,0-16-10.75-16-24s7.16-24,16-24,16,10.75,16,24S312.84,176,304,176Z' />
+                    </svg>
+                    <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+                        <title>ionicons-v5_logos</title>
+                        <path
+                            d='M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z' />
+                    </svg>
+                    <svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+                        <title>ionicons-v5_logos</title>
+                        <path
+                            d='M414.73,97.1A222.14,222.14,0,0,0,256.94,32C134,32,33.92,131.58,33.87,254A220.61,220.61,0,0,0,63.65,365L32,480l118.25-30.87a223.63,223.63,0,0,0,106.6,27h.09c122.93,0,223-99.59,223.06-222A220.18,220.18,0,0,0,414.73,97.1ZM256.94,438.66h-.08a185.75,185.75,0,0,1-94.36-25.72l-6.77-4L85.56,427.26l18.73-68.09-4.41-7A183.46,183.46,0,0,1,71.53,254c0-101.73,83.21-184.5,185.48-184.5A185,185,0,0,1,442.34,254.14C442.3,355.88,359.13,438.66,256.94,438.66ZM358.63,300.47c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54,2.78-14.4,18-17.65,21.75-6.5,4.16-12.07,1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56,2.44-11.32c2.51-2.49,5.57-6.48,8.36-9.72s3.72-5.56,5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53,20.53,0,0,0-14.86,6.94c-5.11,5.56-19.51,19-19.51,46.28s20,53.68,22.76,57.38,39.3,59.73,95.21,83.76a323.11,323.11,0,0,0,31.78,11.68c13.35,4.22,25.5,3.63,35.1,2.2,10.71-1.59,33-13.42,37.63-26.38s4.64-24.06,3.25-26.37S364.21,303.24,358.63,300.47Z'
+                            style='fill-rule:evenodd' />
+                    </svg>
+                </div>
+            </div>
+            <div class="terms">
+                <div class="my_container">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Statement</a>
+                    <a href="#">California Privacy Notice</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">[+] Feedback</a>
+
+                    <span class="copyR">
+                        &copy; 2020 Cars.com. All rights reserved.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,17 +1,11 @@
 @import "../inherit.scss";
 @import '../styles.scss';
 
-body {
-  overflow-x: hidden;
-}
 
 body , html{
   height: 100% ;
 }
 
-main{
-  min-height: 100% ;
-}
 
 .address-header {
   padding: 0.5rem 0;
@@ -213,21 +207,6 @@ input[type="checkbox"]{
 
 
 
-.btn-select{
-  outline: none !important  ;
-  width: 100% ;
-  background-color: $btnColor ;
-  color: white ;
-  margin-top: 1rem ;
-  border-radius: unset ;
-  padding: .5rem 0 ;
-  text-align: center;
-  transition: transform .2s ;
-  &:active{
-    transform: scale(.98);
-  }
-
-}
 
 
 
