@@ -16,6 +16,7 @@ html, body {
 
 body {
   background-color: #ffffff;
+  min-height: 100%;
 }
 
 ul {
@@ -470,6 +471,10 @@ footer .terms a:hover {
 footer .terms .copyR {
   font-size: 14px;
   float: right;
+}
+
+body {
+  min-height: 100%;
 }
 
 main {

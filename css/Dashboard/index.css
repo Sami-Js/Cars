@@ -1,0 +1,272 @@
+@font-face {
+  src: url(../assets/font/SourceSansPro-Regular.ttf);
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+  font-family: "Sans SemiBold";
+}
+
+.head-page {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2))), url("../../assets/img/background-dashboard.jpg") no-repeat center center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2)), url("../../assets/img/background-dashboard.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px !important;
+  z-index: 0;
+}
+
+.head-page .setting {
+  display: flow-root;
+  z-index: 1000;
+}
+
+.head-page .setting div:nth-child(1) {
+  margin: 1rem 3rem;
+  float: right;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.head-page .setting svg {
+  width: 30px;
+  height: 30px;
+}
+
+.head-page .setting .text-svg {
+  margin-right: 10px;
+  color: black;
+  font-family: "Sans SemiBold";
+  color: #142850;
+}
+
+.head-page .welcome_user {
+  font-size: 2.6rem;
+  color: #424242;
+  font-family: "Sans SemiBold";
+}
+
+.head-page .welcome_user span {
+  font-family: inherit;
+  color: #142850;
+}
+
+.head-page .content-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: -4rem;
+}
+
+.head-page .content-boxes > * {
+  z-index: 1000;
+  margin: 0 10px;
+  -ms-flex-preferred-size: 19%;
+      flex-basis: 19%;
+  padding: 1.6rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #142850;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.head-page .content-boxes > *:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.head-page .content-boxes > * .icon-dash {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background: white;
+  border-radius: 50%;
+}
+
+.head-page .content-boxes > * .icon-dash img {
+  width: 100%;
+  height: 100%;
+}
+
+.head-page .content-boxes > * span {
+  font-size: 3rem;
+  color: white;
+  font-family: "Sans SemiBold";
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.head-page .content-boxes > * h6 {
+  font-family: "Sans SemiBold";
+  font-size: 1.1rem;
+  color: #13cadc;
+}
+
+.recommended-content {
+  padding: 8rem 0 3rem;
+  background: #e4e6ec;
+}
+
+.recommended-content .my_container {
+  padding: 0 4rem;
+}
+
+.recommended-content .address {
+  margin: 0;
+  font-size: 2.4rem;
+  color: black;
+}
+
+.recommended-content .para-reco {
+  margin: 0;
+  text-align: center;
+  font-family: "Sans SemiBold";
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.recommended-content .our-cars {
+  padding: 1rem;
+  margin-top: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: white;
+}
+
+.recommended-content .our-cars > * {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  background: white;
+  border: 1px solid #ddd;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+  border: 1px solid #ddd;
+  height: 100%;
+}
+
+.recommended-content .our-cars > *:hover {
+  -webkit-box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+          box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+}
+
+.recommended-content .our-cars > * .img-car {
+  width: 100%;
+}
+
+.recommended-content .our-cars > * .num-car, .recommended-content .our-cars > * .name-car {
+  padding: 0 10px;
+  color: black;
+}
+
+.recommended-content .our-cars > * .name-car {
+  padding-bottom: 5px;
+  font-family: "Sans SemiBold";
+  color: #6b6b6b;
+}
+
+.recommended-content .our-cars > * .num-car {
+  padding-top: 5px;
+}
+
+.recommended-content .our-cars > * .num-car span {
+  font-family: "Sans SemiBold";
+  color: black;
+}
+
+.recommended-content .our-cars > * .num-car .mile {
+  float: right;
+}
+
+.second-content {
+  margin-top: 3rem;
+}
+
+.second-content .add-car {
+  background: white;
+  border: solid 1px #ddd;
+  margin: 1rem 0;
+}
+
+.second-content .add-car img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.second-content .add-car .para-car {
+  text-align: center;
+  padding: 0 20%;
+  font-size: 17px;
+  color: #3d3c3c;
+}
+
+.second-content .add-car .btn-addCar {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.second-content .add-car #addCar {
+  margin: 0 auto;
+  display: block;
+  padding: 6px 2rem;
+  background: #00909e;
+  outline: none;
+  color: white;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.second-content .add-car #addCar:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+.need-help {
+  font-family: "Sans SemiBold";
+  text-align: center;
+  margin: 2rem;
+}
+
+.need-help h6 {
+  margin: 0;
+  font-family: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.need-help a {
+  font-size: 1.1rem;
+  margin: 0;
+}
+/*# sourceMappingURL=index.css.map */

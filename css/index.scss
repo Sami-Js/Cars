@@ -1,7 +1,9 @@
 // has classes globaly inheri
 @import "../css/inherit.scss";
 
-
+body{
+  min-height: 100% ;
+}
 
 main{
   min-height: 60% ;
