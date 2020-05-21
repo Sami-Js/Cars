@@ -1,0 +1,20 @@
+// importing font 
+@font-face{
+    src: url(../assets/font/SourceSansPro-Regular.ttf);
+    font-family: "Sans Regular";
+}
+@font-face{
+    src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+    font-family: "Sans SemiBold";
+}
+
+
+// variable
+$fontReg : "Sans Regular";
+$fontBold : "Sans SemiBold";
+// primary Color 
+$mainColor : #142850 ;
+$btnColor : #00909e ;
+$borderColor : #ddd ;
+
+$shadow :  13px 14px 39px -17px rgba(0,0,0,0.4) ;

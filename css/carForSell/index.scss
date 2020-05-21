@@ -1,0 +1,263 @@
+@import '../variables.scss';
+
+
+.head-page{
+    background: linear-gradient(to right , rgba(0,0,0,.5) , rgba(0,0,0,.2) ), url(../../assets/img/car-for-sell.jpg) no-repeat ;
+    background-position-y: 60% ;
+    filter: grayscale(.8);
+    background-size: cover;
+}
+
+// classes inhertins 
+.address{
+    margin: 0;
+}
+
+.find-car{
+    .container-box{
+        margin-top: .5rem ;
+        padding: 1.5rem 0;
+        background: #f7f7f7;
+        
+    }
+
+    .list-boxes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & > * {
+            flex-basis: 24% ;
+            transition: box-shadow .5s ;
+            border: 1px solid $borderColor;
+            &:hover{
+                box-shadow: $shadow;
+            }
+        }
+
+        .link-box{
+            background: white;
+            display: inherit;
+            flex-direction: column;
+            text-align: center;
+            padding: .8rem ;
+            height: 100% ;
+            img{
+                width: 100% ;
+            }
+
+            .address-link{
+                display: block;
+                text-align: center ;
+                color: black ;
+                font-family: $fontBold ;
+            }
+        }
+    }
+}
+
+.bodystyle{
+    margin: 1rem 0;
+}
+    .list-bodyStyle{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .list-car{
+        .address-list{
+            font-family: $fontBold;
+            font-size: 1.1rem ;
+        }
+
+        li{
+            margin: 5px 0 ;
+        }
+    }
+
+
+    .brand-search{
+        margin: 2rem 0;
+        .my_container{
+            padding: 1rem 0;
+            border-top: 1px solid $borderColor ;
+        }
+
+        .list-car{
+            min-width: 120px ;
+            margin: 1rem 0;
+        }
+    }
+
+
+    .value-car{
+        background-color: $mainColor ;
+        color: white ;
+
+        .content-details:nth-child(1){
+            border-right: 1px solid rgba(255, 255, 255, 0.075);
+        }
+
+        .content-details{
+            padding: 2rem ;
+            margin: 0 10px ;
+            // text-align: center ;
+            display: inline-block;
+            .address-text{
+                margin: 0;
+                font-family: $fontBold;
+            }
+
+            .para-used{
+                margin: 0 ;
+                color: rgb(192, 191, 191);
+                margin: .1rem 0 .6rem ;
+            }
+        }
+    }
+
+
+    .loan-rates{
+        text-align: center ;
+        padding: 2rem ;
+        background: #f7f7f7;
+        .address-box{
+            margin: 0;
+            font-size: 2rem;
+        }
+        #rate{
+            font-size: 3rem ;
+            text-align: center;
+            display: block;
+        }
+
+        p,a{
+            text-align: center;
+            display: block;
+        }
+
+        .hint{
+            font-family: $fontBold ;
+            color: rgb(95, 94, 94);
+        }
+
+        .para-loan{
+            margin: 0 ;
+        }
+
+        .link{
+            font-family: $fontBold ;
+        }
+
+
+
+    }
+
+
+
+    .FAQS{
+        padding: 3rem 1rem;
+        .address-box{
+            text-align: start;
+            padding: 0;
+            margin-top: 3rem ;
+            font-size: 23px ;
+        }
+
+        .link-FAQ{
+            display: block;
+            margin: 5px 0;
+            font-size: 18px ;
+        }
+    }
+
+
+    .content-FAQ{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tipsBuy{
+        margin: 2rem 0;
+        background: #f7f7f7 ;
+        padding: 1rem 0 2rem;
+        .address{
+            padding-top: 2rem ;
+        }
+
+        .para-tipsBuy{
+            text-align : center ;
+            font-size: 18px ;
+            color: rgb(90, 90, 90);
+            margin-bottom: 1rem ;
+        }
+    }
+
+    .content-tips{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between ;
+        & > * {
+            width: calc(33.333% - 1rem )  ;
+            border: 1px solid #e7e7e7 ;
+            margin: 1rem 0;
+            transition: box-shadow .5s ;
+                &:hover{
+                    box-shadow: $shadow ;
+                }
+            img{
+                width: 100% ;
+            }
+
+            .para-tips{
+                padding: 1rem ;
+                background: #fff ;
+                
+                .address-tips{
+                    text-align: center;
+                    color: black ;
+                    font-family: $fontBold;
+                    font-size: 23px ;
+                }
+
+                p{
+                    color: rgb(80, 78, 78) ;
+                    margin-top: 10px ;
+                    line-height: 1.8rem;
+                    font-size: 16px ;
+                }
+            }
+        }
+    }
+
+
+.related-topic{
+    margin: 4rem 0;
+    .address{
+        text-align: start ;
+        margin-bottom: 3rem ;
+    }
+
+    .topic{
+        margin-bottom: 2rem ;
+
+        h3{
+            margin: 0;
+            font-size: 1.4rem;
+            font-family: $fontBold ;
+        }
+
+        .para-topic{
+            font-size: 16px ;
+            color: rgb(104, 104, 104) ;
+        }
+    }
+}
+
+
+
+.populer-search{
+    background-color: #f7f7f7;
+    padding: 1rem 0 4rem;
+}

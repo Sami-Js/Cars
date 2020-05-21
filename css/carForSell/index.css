@@ -1,0 +1,298 @@
+@font-face {
+  src: url(../assets/font/SourceSansPro-Regular.ttf);
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+  font-family: "Sans SemiBold";
+}
+
+.head-page {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2))), url(../../assets/img/car-for-sell.jpg) no-repeat;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../../assets/img/car-for-sell.jpg) no-repeat;
+  background-position-y: 60%;
+  -webkit-filter: grayscale(0.8);
+          filter: grayscale(0.8);
+  background-size: cover;
+}
+
+.address {
+  margin: 0;
+}
+
+.find-car .container-box {
+  margin-top: .5rem;
+  padding: 1.5rem 0;
+  background: #f7f7f7;
+}
+
+.find-car .list-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.find-car .list-boxes > * {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+  border: 1px solid #ddd;
+}
+
+.find-car .list-boxes > *:hover {
+  -webkit-box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+          box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+}
+
+.find-car .list-boxes .link-box {
+  background: white;
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: .8rem;
+  height: 100%;
+}
+
+.find-car .list-boxes .link-box img {
+  width: 100%;
+}
+
+.find-car .list-boxes .link-box .address-link {
+  display: block;
+  text-align: center;
+  color: black;
+  font-family: "Sans SemiBold";
+}
+
+.bodystyle {
+  margin: 1rem 0;
+}
+
+.list-bodyStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-car .address-list {
+  font-family: "Sans SemiBold";
+  font-size: 1.1rem;
+}
+
+.list-car li {
+  margin: 5px 0;
+}
+
+.brand-search {
+  margin: 2rem 0;
+}
+
+.brand-search .my_container {
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.brand-search .list-car {
+  min-width: 120px;
+  margin: 1rem 0;
+}
+
+.value-car {
+  background-color: #142850;
+  color: white;
+}
+
+.value-car .content-details:nth-child(1) {
+  border-right: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.value-car .content-details {
+  padding: 2rem;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.value-car .content-details .address-text {
+  margin: 0;
+  font-family: "Sans SemiBold";
+}
+
+.value-car .content-details .para-used {
+  margin: 0;
+  color: #c0bfbf;
+  margin: .1rem 0 .6rem;
+}
+
+.loan-rates {
+  text-align: center;
+  padding: 2rem;
+  background: #f7f7f7;
+}
+
+.loan-rates .address-box {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.loan-rates #rate {
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+}
+
+.loan-rates p, .loan-rates a {
+  text-align: center;
+  display: block;
+}
+
+.loan-rates .hint {
+  font-family: "Sans SemiBold";
+  color: #5f5e5e;
+}
+
+.loan-rates .para-loan {
+  margin: 0;
+}
+
+.loan-rates .link {
+  font-family: "Sans SemiBold";
+}
+
+.FAQS {
+  padding: 3rem 1rem;
+}
+
+.FAQS .address-box {
+  text-align: start;
+  padding: 0;
+  margin-top: 3rem;
+  font-size: 23px;
+}
+
+.FAQS .link-FAQ {
+  display: block;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.content-FAQ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tipsBuy {
+  margin: 2rem 0;
+  background: #f7f7f7;
+  padding: 1rem 0 2rem;
+}
+
+.tipsBuy .address {
+  padding-top: 2rem;
+}
+
+.tipsBuy .para-tipsBuy {
+  text-align: center;
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+}
+
+.content-tips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-tips > * {
+  width: calc(33.333% - 1rem);
+  border: 1px solid #e7e7e7;
+  margin: 1rem 0;
+  -webkit-transition: -webkit-box-shadow .5s;
+  transition: -webkit-box-shadow .5s;
+  transition: box-shadow .5s;
+  transition: box-shadow .5s, -webkit-box-shadow .5s;
+}
+
+.content-tips > *:hover {
+  -webkit-box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+          box-shadow: 13px 14px 39px -17px rgba(0, 0, 0, 0.4);
+}
+
+.content-tips > * img {
+  width: 100%;
+}
+
+.content-tips > * .para-tips {
+  padding: 1rem;
+  background: #fff;
+}
+
+.content-tips > * .para-tips .address-tips {
+  text-align: center;
+  color: black;
+  font-family: "Sans SemiBold";
+  font-size: 23px;
+}
+
+.content-tips > * .para-tips p {
+  color: #504e4e;
+  margin-top: 10px;
+  line-height: 1.8rem;
+  font-size: 16px;
+}
+
+.related-topic {
+  margin: 4rem 0;
+}
+
+.related-topic .address {
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.related-topic .topic {
+  margin-bottom: 2rem;
+}
+
+.related-topic .topic h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-family: "Sans SemiBold";
+}
+
+.related-topic .topic .para-topic {
+  font-size: 16px;
+  color: #686868;
+}
+
+.populer-search {
+  background-color: #f7f7f7;
+  padding: 1rem 0 4rem;
+}
+/*# sourceMappingURL=index.css.map */

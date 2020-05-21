@@ -1,12 +1,6 @@
 @import '../css/styles.scss';
+@import '../css/variables.scss';
 
-// variable
-$fontReg : "Sans Regular";
-$fontBold : "Sans SemiBold";
-// primary Color 
-$mainColor : #142850 ;
-$btnColor : #00909e ;
-$borderColor : #ddd ;
 
 @mixin flexer($justify , $align) {
     display: flex;

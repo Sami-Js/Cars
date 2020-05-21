@@ -1,13 +1,3 @@
-@font-face {
-  src: url(../assets/font/SourceSansPro-Regular.ttf);
-  font-family: "Sans Regular";
-}
-
-@font-face {
-  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
-  font-family: "Sans SemiBold";
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +15,7 @@ html, body {
 }
 
 body {
-  background-color: #f8fffe;
+  background-color: #ffffff;
 }
 
 ul {

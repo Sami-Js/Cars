@@ -454,7 +454,7 @@ main{
       width: 200px;
       transition: box-shadow .5s ;
       &:hover{
-        box-shadow: 13px 14px 39px -17px rgba(0,0,0,0.4);
+        box-shadow: $shadow;
 
       }
       img{
@@ -474,6 +474,15 @@ main{
       }
     }
   }
+}
+
+.address-box{
+  color: black ;
+  font-family: $fontBold;
+  font-size: 1.3rem;
+  padding: 1rem;
+  display: block;
+  text-align: center;
 }
 
 
