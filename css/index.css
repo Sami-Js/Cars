@@ -60,12 +60,12 @@ a {
 }
 
 @font-face {
-  src: url(../assets/font/SourceSansPro-Regular.ttf);
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
   font-family: "Sans Regular";
 }
 
 @font-face {
-  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
   font-family: "Sans SemiBold";
 }
 

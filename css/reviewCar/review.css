@@ -1,3 +1,13 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -60,12 +70,12 @@ a {
 }
 
 @font-face {
-  src: url(../assets/font/SourceSansPro-Regular.ttf);
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
   font-family: "Sans Regular";
 }
 
 @font-face {
-  src: url(../assets/font/SourceSansPro-SemiBold.ttf);
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
   font-family: "Sans SemiBold";
 }
 
@@ -473,67 +483,6 @@ footer .terms .copyR {
   float: right;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-align: start;
-  font-family: "Sans Regular";
-}
-
-.d-none {
-  display: none;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-color: #ffffff;
-  min-height: 100%;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-input, button {
-  outline: none;
-  border: none;
-}
-
-a {
-  text-decoration: none !important;
-}
-
-.icon_ {
-  width: 30px;
-  cursor: pointer;
-}
-
-.btn-effect:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
-}
-
-.input-style {
-  width: 100%;
-  padding: 8px 12px;
-  border: 1px solid #f1f1f1;
-  font-size: 16px;
-}
-
-.my_container {
-  max-width: 1170px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 1rem;
-}
-
 body, html {
   height: 100%;
 }
@@ -631,6 +580,12 @@ body, html {
 
 .head-btn {
   width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .head-btn #Sort {
@@ -638,11 +593,10 @@ body, html {
 }
 
 .head-btn label {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.1rem;
   text-align: center;
   cursor: pointer;
   margin: 0;
-  width: 148.2px;
   border-radius: 3px 3px 0 0;
   background-color: #f0f0f0;
   color: #7a7a7a;

@@ -1,5 +1,4 @@
 @import "../inherit.scss";
-@import '../styles.scss';
 
 
 body , html{
@@ -103,20 +102,22 @@ body , html{
 
 .head-btn {
   width: 300px;
+  display: flex;
+  justify-content: space-between;
   #Sort {
     display: none;
   }
 
   label {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.1rem;
     text-align: center;
     cursor: pointer;
     margin: 0;
-    width: 148.2px;
     border-radius: 3px 3px 0 0;
     background-color: rgb(240, 240, 240);
     color: rgb(122, 122, 122);
   }
+
 
   .checked {
     background-color: #fff;
@@ -323,6 +324,34 @@ main .my_container{
 
 }
 
+
+.details{
+  .Color{
+    width: 15px ;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50% ;
+    background: #000;
+    transform: translateY(3px);
+    border: 1px solid $borderColor ;
+    margin-right: 5px ;
+  }
+
+  .check-1:nth-child(1) .Color{
+    background: #cec872 ;
+  }
+  .check-1:nth-child(2) .Color{
+    background: black ;
+  }
+  .check-1:nth-child(3) .Color{
+    background: #fff ;
+  }
+  .check-1:nth-child(4) .Color{
+    background: red ;
+  }
+
+ 
+}
 
 
 
