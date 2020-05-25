@@ -1,0 +1,179 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.head-page {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4))), url(../../assets/img/car-for-sell.jpg) no-repeat center center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4)), url(../../assets/img/car-for-sell.jpg) no-repeat center center;
+  background-size: cover;
+  background-position-y: 60%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  height: 260px;
+}
+
+.head-page .welcome_user {
+  font-size: 3rem;
+  padding-top: 4rem;
+  font-family: "Sans SemiBold";
+}
+
+.container-boxes .content-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-boxes .content-boxes .box-content {
+  position: relative;
+  top: -2rem;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  margin: 0 .5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-boxes .content-boxes .box-content .box-address {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container-boxes .content-boxes .box-content .icon-link {
+  background: #68a5ab;
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.container-boxes .content-boxes .box-content .icon-link svg {
+  width: 34px;
+  height: 34px;
+  fill: black;
+}
+
+.container-boxes .content-boxes .box-content .box-para {
+  color: #6e6e6e;
+}
+
+.container-boxes .content-boxes .box-content .container-links a:nth-child(1) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.listing {
+  background: #e9e9e9;
+  margin: 1rem 0;
+  padding: 1.5rem 0;
+}
+
+.listing .title {
+  text-align: center;
+  font-family: "Sans SemiBold";
+}
+
+.listing p {
+  text-align: center;
+  color: #5a5a5a;
+}
+
+.listing button {
+  width: unset;
+  margin: 0 auto;
+  padding: .4rem 4rem;
+  display: block;
+}
+
+.questions {
+  margin: 4rem 0;
+}
+
+.questions .content-ques {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions .content-ques > * {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.questions .content-ques > * p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #6e6e6e;
+}
+
+.questions .content-ques > * h3 {
+  font-family: "Sans SemiBold";
+}
+
+.sold-car {
+  padding: 1.5rem 0;
+  margin: 2rem 0;
+  background: #e9e9e9;
+}
+
+.sold-car .title {
+  font-family: "Sans SemiBold";
+  padding: 1rem 0;
+}
+
+.sold-car p {
+  color: #6e6e6e;
+}
+
+.sold-car a:hover p {
+  color: black;
+}
+
+.sold-car .btn-select {
+  width: unset;
+  margin: 0 auto;
+  padding: .5rem 1.5rem;
+  display: block;
+  background: transparent;
+  color: #142850;
+  font-family: "Sans SemiBold";
+  border: 1px solid #142850;
+  border-radius: 3px;
+}
+
+.sold-car .btn-select:hover {
+  background: #142850;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

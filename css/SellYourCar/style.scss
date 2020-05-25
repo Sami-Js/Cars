@@ -1,0 +1,142 @@
+@import "../variables.scss";
+
+.head-page {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4)),
+    url(../../assets/img/car-for-sell.jpg) no-repeat center center;
+  background-size: cover;
+  background-position-y: 60%;
+  filter: grayscale(1);
+  height: 260px;
+
+  .welcome_user {
+    font-size: 3rem;
+    padding-top: 4rem;
+    font-family: $fontBold 
+    ;
+  }
+}
+
+.container-boxes {
+  .content-boxes {
+      display: flex;
+    .box-content {
+        position: relative;
+        top: -2rem;
+        flex-basis: 32% ;
+        margin: 0 .5%;
+        display: flex;
+        text-align: center ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .box-address{
+            text-align: center;
+            flex-grow: 1;
+        }
+      .icon-link {
+          background: #68a5ab ;
+          padding: 1.5rem ;
+          border-radius: 50% ;
+          border: 3px solid white ;
+        svg{
+          width: 34px;
+          height: 34px;
+          fill: black  ;
+        }
+      }
+
+      .box-para{
+          color: rgb(110, 110, 110);
+      }
+
+
+      .container-links{
+          a:nth-child(1){
+            padding-right: 10px ;
+            margin-right: 10px ;
+            border-right: 1px solid $borderColor ;
+          }
+      }
+      
+    }
+  }
+}
+
+
+.listing{
+    background: rgb(233, 233, 233) ;
+    margin: 1rem 0;
+    padding: 1.5rem 0;
+    .title{
+        text-align: center;
+        font-family: $fontBold ;
+    }
+
+    p{
+        text-align: center ;
+        color: rgb(90, 90, 90);
+    }
+
+    button{
+        width: unset;
+        margin: 0 auto ;
+        padding: .4rem 4rem ;
+        display: block ;
+    }
+}
+
+
+.questions{
+    margin: 4rem 0;
+    .content-ques{
+        display: flex;
+        justify-content: space-between;
+        & > * {
+            flex-basis: 32% ;
+            display: flex;
+            flex-direction: column;
+            p{
+                flex-grow: 1;
+                color: rgb(110, 110, 110);
+            }
+            h3{
+                font-family: $fontBold ;
+            }
+        }
+    }
+}
+
+
+.sold-car{
+    padding: 1.5rem 0 ;
+    margin: 2rem 0 ;
+    background: rgb(233, 233, 233);
+    .title{
+        font-family: $fontBold;
+        padding: 1rem 0;
+    }
+
+    p{
+        color: rgb(110, 110, 110);
+    }
+
+    a:hover p{
+        color: black ;
+    }
+
+    .btn-select{
+        width: unset;
+        margin: 0 auto ;
+        padding: .5rem 1.5rem ;
+        display: block;
+        background: transparent;
+        color: $mainColor ;
+        font-family: $fontBold;
+        border: 1px solid $mainColor ;
+        border-radius: 3px ;
+        &:hover{
+            background: $mainColor ;
+            color: white ;
+        }
+    }
+}
