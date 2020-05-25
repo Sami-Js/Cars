@@ -1,0 +1,174 @@
+@import '../variables.scss';
+
+.movement-link{
+    padding: 2rem 0 ;
+    font-size: 14px ;
+    a{
+        color: $btnColor;
+    }
+}
+
+
+.title-page{
+    font-family: $fontBold;
+    color: $mainColor ;
+    font-size: 2rem;
+    margin: 0 ;
+}
+
+.para-title{
+    margin: 0 ;
+    color: rgb(92, 91, 91);
+    margin-bottom: 3rem ;
+}
+
+.page-content{
+    background: rgb(243, 243, 243);
+    padding: 2rem 0 ;
+    margin: 1rem 0 2rem;
+    svg{
+        width: 4rem ;
+        height: 4rem ;
+        margin-right: 10px ;
+        fill: rgb(73, 73, 73);
+    }
+
+    .style-box{
+        display: flex;
+        align-items: center;
+    }
+
+    .para-content{
+        color: rgb(92, 91, 91);
+    }
+}
+
+.title-form{
+    font-size: 18px ;
+    font-family: $fontBold ;
+    color: rgb(83, 82, 82);
+    margin: 1rem 0;
+}
+
+.optional{
+    font-size: 13px ;
+    color: grey;
+}
+
+.input-style{
+    border: 1px solid rgb(207, 207, 207) ;
+    width: 49% ;
+    display: block ;
+}
+
+.input-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    & > * {
+        flex-basis: 49% ;
+        & .input-style{
+            width: 100% !important ;
+        }
+    }
+}
+
+.appear {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  select , .cb-style {
+    @extend .appear;
+    background: url(../../assets/svg/small-down-arrow-icon-15593.png);
+    background-repeat: no-repeat;
+    background-size: 16px 17px;
+    background-position: right;
+    background-origin: content-box;
+  }
+
+
+  .label_{
+      font-family: $fontBold;
+      margin-bottom: 4px ;
+      margin-top: 1rem;
+  }
+
+ 
+
+  .input-style:focus{
+      outline: 1px solid rgba(8, 8, 206, 0.575)  ;
+  }
+
+
+  ::-webkit-inner-spin-button{
+      display: none ;
+  }
+
+
+  .btn-state{
+      width: unset ;
+      padding: .4rem 2rem;  
+      margin: 1rem 0 ;
+      text-align: center;
+      background: transparent;
+      border: 1px solid $btnColor;
+      color: $btnColor;
+      font-family: $fontBold ;
+      &:hover{
+          background: $btnColor;
+          color: white ;
+      }
+  }
+
+
+  .btn-select{
+      margin: 2rem 0 3rem ;
+      width: unset;
+      padding: .4rem 3rem ;
+  }
+
+  .info{
+      .title-form{
+          color: black ;
+      }
+      
+      .label_{
+          margin-top: 1rem ;
+      }
+
+      .content-info{
+          margin-top: 15px ;
+          .para-info{
+              color: rgb(92, 91, 91);
+          }
+      }
+  }
+
+
+
+  .looking-price{
+    position: absolute;
+    bottom: 0;
+      .title-form{
+          font-size: 1.6rem ;
+          color: $mainColor ;
+          margin: 5px  ;
+      }
+  }
+
+
+
+  .more-advice{
+      background-color: rgb(243, 243, 243);
+      margin: 4rem 0 ;
+      padding: 2rem 0;
+      .title{
+          font-family: $fontBold;
+          color: $btnColor;
+          padding: 1rem 0 ;
+      }
+  }
+
+
