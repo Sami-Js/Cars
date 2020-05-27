@@ -1,0 +1,234 @@
+@import '../variables.scss';
+
+.content-movement{
+    padding: 1.5rem 0 ;
+    display: flex;
+    justify-content: space-between;
+    .research{
+        i{
+            margin-right: 5px ;
+        }
+    }
+}
+
+.address-res{
+    font-family: $fontBold ;
+    margin: 0;
+    color: $mainColor ;
+    font-size: 1.8rem;
+}
+
+.para{
+    font-size: 16px ;
+    color: rgb(110,110,110);
+    padding-bottom: 1rem ;
+    margin: 0 ;
+    border-bottom: 1px solid $borderColor ;
+}
+
+
+.result{
+    padding: .5rem 0;
+    .resultCar{
+        margin-right: 10px ;
+        font-family: $fontBold ;
+        #numResult{
+            font-family: inherit;
+        }
+    }
+    
+    a{
+        font-size: 15px ;
+    }
+}
+
+.body-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left-side{
+        font-size: 14px ;
+        a{
+            margin-left: 2px ;
+        }
+
+        strong{
+            font-size: inherit;
+        }
+    }
+    svg{
+        width: 15px ;
+        height: 15px ;
+        fill: rgb(83, 83, 83);
+    }
+
+    .right-side{
+        padding: .3rem .6rem ;
+        border: 1px solid $borderColor ;
+        cursor: pointer;
+    }
+}
+
+
+.cars-research{
+    background: rgb(235, 233, 233);
+    margin-top: 1rem ;
+    padding: 2rem 0 ;
+}
+
+.sorting{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between ;
+    background: white ;
+    padding: 1.5rem ;
+    form{
+        display: flex;
+        align-items: center;
+        width: 50% ;
+        label {
+            margin-right: 20px ;
+            font-family: $fontBold ;
+        }
+
+        select{
+            width: 60% ;
+            border: 1px solid rgb(194, 194, 194) ;
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+
+
+    .btn-compare{
+        padding: .5rem 1rem ;
+        background-color: $btnColor ;
+        color: white;
+    }
+}
+
+.cars-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.style-car{
+    width: 369px;
+    margin: 1rem 5px 0 ;
+    background-color: #fff;
+    .img_{
+        background:linear-gradient(to top , rgba(0,0,0,.1) , white) ;
+        img{
+            width: 100%;
+            height: 100% ;
+        }
+    }
+
+    .address-car{
+        font-family: $fontBold;
+        margin: .2rem 0;
+    }
+
+    .address-details{
+        display: block ;
+        text-transform: uppercase ;
+        font-family: $fontBold;
+        color: rgb(121, 121, 121);
+        font-size: 14px ;
+        margin-top: 10px ;
+    }
+
+    .MSRP{
+        font-size: 1.4rem ;
+        font-family: $fontBold ;
+    }
+
+    .rating{
+        display: flex;
+        align-items: center;
+        svg{
+            width: 15px ;
+            height: 15px ;
+        }
+        polygon{
+            fill: rgb(226, 205, 18);
+        }
+        span{
+            margin-left: 10px ;
+            font-family: $fontBold ;
+        }
+    }
+
+    .value_{
+        font-family: $fontBold ;
+    }
+
+    .details-car{
+        padding: 1rem 1rem 0;
+    }
+
+
+    .btns{
+        display: flex;
+        .btn-style{
+            margin: 0 ;
+            margin-top: 2rem ;
+            font-size: 16px ;
+            width: 50% ;
+            border-radius: 0 ;
+            padding: .7rem 0;
+            background: transparent ;
+            color: rgb(77, 76, 76) ;
+            border: 1px solid $borderColor ;
+            border-right: none ;
+            cursor: pointer ;
+            &:hover{
+                color: white ;
+                background-color: $btnColor;
+            }
+        }
+    }
+
+   
+}
+
+
+
+
+.pagi-content{
+    width: 100% ;
+    display: flex;
+    justify-content: center ;
+    margin: 3rem 0;
+}
+
+.last-article{
+    padding: 3rem 0;
+    border-bottom: 1px solid $borderColor ;
+    .title{
+        font-family: $fontBold;
+        margin-bottom: 2rem ;
+    }
+
+    .title-new{
+        font-family: $fontBold;
+        color: black ;
+    }
+}
+
+.news-article{
+    padding: 3rem 0;
+    .row{
+        margin-bottom: 2rem ;
+    }
+    a{
+        color: black ;
+        font-family: $fontBold;
+        font-size: 18px ;
+    }
+
+    .move-link{
+        color: rgb(0, 110, 255) ;
+    }
+}

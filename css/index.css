@@ -1012,6 +1012,20 @@ main {
   text-align: center;
 }
 
+.appear, select, .cb-style {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select, .cb-style {
+  background: url(../../assets/svg/small-down-arrow-icon-15593.png);
+  background-repeat: no-repeat;
+  background-size: 16px 17px;
+  background-position: right;
+  background-origin: content-box;
+}
+
 @media (max-width: 850px) {
   .container-inputs > * {
     width: 50%;
