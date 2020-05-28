@@ -506,7 +506,26 @@ select , .cb-style {
 }
 
 
+.movement-link{
+  padding: 2rem 0 ;
+  font-size: 14px ;
+  a{
+      color: $btnColor;
+  }
+}
 
+.title-page{
+  font-family: $fontBold;
+  color: $mainColor ;
+  font-size: 2rem;
+  margin: 0 ;
+}
+
+.para-title{
+  margin: 0 ;
+  color: rgb(92, 91, 91);
+  margin-bottom: 3rem ;
+}
 
 
 

@@ -1,0 +1,132 @@
+@import '../variables.scss';
+
+.title-page{
+    color: $address ;
+    margin-bottom: 10px;
+}
+
+.para-title{
+  max-width: 80% ;
+}
+
+
+
+.packages{
+    padding: 3rem 0 ;
+    background-color: $bgSection ;
+    .content-package{
+        display: flex;
+        justify-content: center;
+        & > * {
+            width: 33.3% ;
+            padding: 2rem ;
+            border: 1px solid $borderColor  ;
+            background: white ;
+            box-sizing: border-box;
+            text-align: center ;
+            & > * {
+                text-align: center;
+            }
+
+            &:nth-child(2){
+                transform: scale(1.1);
+                border-top: 3px solid $btnColor ;
+            }
+
+            .title{
+                font-family: $fontBold ;
+                color: $address;
+            }
+            .price{
+            font-size: 1.5rem ;
+            font-family: $fontBold ;
+             margin: 1rem 0;
+             display: block ;
+            }
+            .features li{
+                text-align: center ;
+                margin: .7rem 0;
+                font-size: 15px ;
+            }
+
+            .hint{
+                font-size: 12px !important ;
+                color: rgb(97, 96, 96) !important ;
+            }
+            
+            
+            .btn-select{
+                padding: .4rem !important ;
+                cursor: pointer ;
+            }
+        }
+    }
+}
+
+
+.address{
+    font-size: 1.7rem ;
+    color: $address;
+    margin: 2rem 0 ;
+    display: block ;
+}
+
+
+.createListing{
+    margin: 4rem 0;
+}
+
+.list-1{
+    display: flex;
+    align-items: center ;
+    padding: 1rem 0 ;
+    border-bottom: 1px solid $borderColor ;
+    .para-list{
+        margin-left: 10px ;
+        color: rgb(97, 96, 96);
+        font-family: $fontBold;
+        &:hover{
+            color: black ;
+        }
+    }
+}
+
+
+.other-ways{
+    margin: 5rem 0 ;
+    .address{
+        font-size: 1.4rem;
+    }
+    .way-sell{
+        display: flex;
+        flex-basis: 40% ;
+        margin: 0 auto ;
+        flex-direction: column;
+        padding: 1rem ;
+        .title , .para-way{
+            text-align: center ;
+        }
+
+        .title{
+            font-family: $fontBold ;
+            color: $address;
+        }
+
+        .para-way{
+            font-size: 17px ;
+        }
+
+        
+    }
+
+
+    .btn-select{
+        background-color : transparent ;
+        color: $btnColor  ;
+        border: 1px solid $borderColor ;
+        &:hover{
+            background-color: $btnColor ;
+            color: white ;
+        }
+    }
+}

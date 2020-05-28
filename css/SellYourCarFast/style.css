@@ -1,0 +1,159 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.title-page {
+  color: #452888;
+  margin-bottom: 10px;
+}
+
+.para-title {
+  max-width: 80%;
+}
+
+.packages {
+  padding: 3rem 0;
+  background-color: #ebe9e9;
+}
+
+.packages .content-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.packages .content-package > * {
+  width: 33.3%;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  background: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.packages .content-package > * > * {
+  text-align: center;
+}
+
+.packages .content-package > *:nth-child(2) {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-top: 3px solid #00909e;
+}
+
+.packages .content-package > * .title {
+  font-family: "Sans SemiBold";
+  color: #452888;
+}
+
+.packages .content-package > * .price {
+  font-size: 1.5rem;
+  font-family: "Sans SemiBold";
+  margin: 1rem 0;
+  display: block;
+}
+
+.packages .content-package > * .features li {
+  text-align: center;
+  margin: .7rem 0;
+  font-size: 15px;
+}
+
+.packages .content-package > * .hint {
+  font-size: 12px !important;
+  color: #616060 !important;
+}
+
+.packages .content-package > * .btn-select {
+  padding: .4rem !important;
+  cursor: pointer;
+}
+
+.address {
+  font-size: 1.7rem;
+  color: #452888;
+  margin: 2rem 0;
+  display: block;
+}
+
+.createListing {
+  margin: 4rem 0;
+}
+
+.list-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-1 .para-list {
+  margin-left: 10px;
+  color: #616060;
+  font-family: "Sans SemiBold";
+}
+
+.list-1 .para-list:hover {
+  color: black;
+}
+
+.other-ways {
+  margin: 5rem 0;
+}
+
+.other-ways .address {
+  font-size: 1.4rem;
+}
+
+.other-ways .way-sell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.other-ways .way-sell .title, .other-ways .way-sell .para-way {
+  text-align: center;
+}
+
+.other-ways .way-sell .title {
+  font-family: "Sans SemiBold";
+  color: #452888;
+}
+
+.other-ways .way-sell .para-way {
+  font-size: 17px;
+}
+
+.other-ways .btn-select {
+  background-color: transparent;
+  color: #00909e;
+  border: 1px solid #ddd;
+}
+
+.other-ways .btn-select:hover {
+  background-color: #00909e;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
