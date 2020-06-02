@@ -156,4 +156,19 @@
   background-color: #00909e;
   color: white;
 }
+
+.overley-circle {
+  position: relative;
+}
+
+.overley-circle .hasPlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.overley-circle svg {
+  width: 20px;
+  height: 20px;
+}
 /*# sourceMappingURL=style.css.map */

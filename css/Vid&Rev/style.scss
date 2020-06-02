@@ -1,0 +1,190 @@
+@import "../variables.scss";
+
+.head-search {
+  padding: 1.5rem 0;
+  .head-address {
+    font-family: $fontBold;
+    font-size: 2.4rem;
+    color: $mainColor;
+  }
+
+  .input-style {
+    background: url(../../assets/svg/search-outline.svg) no-repeat;
+    background-origin: content-box;
+    background-size: 18px 18px;
+    background-position: right;
+    width: 30%;
+    border: 1px solid grey;
+  }
+
+  .my_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content-links {
+  border-bottom: 1px solid $borderColor;
+  .links {
+    a {
+      padding: 0.6rem 1rem;
+      display: inline-block;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(241, 238, 238);
+      }
+    }
+  }
+}
+
+.head-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+  border-top: 1px solid $borderColor;
+  margin-top: 2rem; /* delete this after */
+  .address-link {
+    font-family: $fontBold;
+    font-size: 1.8rem;
+    color: $address;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 6px;
+    background: $btnColor;
+  }
+}
+
+.content-stories {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto;
+  grid-gap: 1.2rem;
+}
+
+.content-story {
+  margin-bottom: 1.5rem;
+  display: block;
+  .status {
+    color: rgb(226, 37, 37);
+    font-family: $fontBold;
+    margin: 2px 0;
+    display: block;
+    font-size: 14px;
+  }
+
+  .title-story {
+    font-size: 1.3rem;
+    color: rgb(80, 78, 78);
+    font-family: $fontBold;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .date-story {
+    font-size: 13px;
+    color: grey;
+  }
+
+  .para-story {
+    color: grey;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  &:hover {
+    .title-story {
+      color: $address;
+    }
+  }
+}
+
+.sub-article {
+  display: flex;
+  justify-content: space-between;
+  & > * {
+    flex-basis: 24%;
+  }
+}
+
+.stay-contact {
+  background-color: rgb(233, 233, 233);
+  padding: 2rem;
+  margin: 4rem 0;
+  display: block;
+  .para {
+    .title {
+      font-family: $fontBold;
+      font-size: 1.6rem;
+    }
+    p {
+      color: rgb(116, 115, 115);
+    }
+  }
+
+  .my_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .para {
+      flex-basis: 40%;
+    }
+
+    form {
+      flex-basis: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      label {
+        font-family: $fontBold;
+      }
+      & > * {
+        flex-basis: 47%;
+      }
+    }
+  }
+}
+
+.overley-circle {
+  position: relative;
+  background-color: rgb(107, 161, 157);
+  .hasPlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+    svg {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      fill: #fff;
+      border-radius: 50% ;
+      padding: 1.5rem;
+      box-sizing: content-box;
+      transition: background-color .3s ;
+      background-color: rgba(0, 0, 0, 0.479);
+    }
+  }
+
+
+  &:hover{
+      .hasPlay{
+          svg{
+              background-color: rgb(46, 45, 45) ;
+          }
+      }
+  }
+}

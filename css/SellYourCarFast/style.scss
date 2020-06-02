@@ -130,3 +130,21 @@
         }
     }
 }
+
+
+
+
+.overley-circle{
+    position: relative;
+    .hasPlay{
+        position: absolute;
+        left: 0 ;
+        top: 0 ;
+    }
+
+    svg{
+        width: 20px ;
+        height: 20px ;
+    }
+    
+}
