@@ -1,0 +1,235 @@
+@import '../variables.scss';
+
+.head-page{
+    background: linear-gradient(to bottom , rgba(0,0,0,.6) , transparent ) , url(../../assets/img/background-service.jpg);
+    background-size: cover;
+    .address-page{
+        text-align: center ;
+        font-family: $fontBold ;
+    }
+}
+
+.search-car{
+    background-color: #fff;
+    color: black ;
+    z-index: -1;
+    max-width: 975px ;
+    top: -15rem ;
+    box-shadow: 0 0px 29px rgba(0,0,0,.155) ;
+    .content-services{
+        display: flex;
+        align-items: center;
+        padding: 1rem 2rem ;
+    }
+
+    .left-side{
+        text-align: center ;
+        width: 45% ;
+        background: $mainColor;
+        color: white ;
+        padding: 1.5rem 3.2rem ;
+        .title{
+            font-family: $fontBold;
+            text-align: inherit;
+        }
+        .para{
+            text-align: inherit;
+            font-size: 15px ;
+            color: rgb(167, 167, 167);
+        }
+    }
+
+    .right-side{
+        width: 55% ;
+        padding: 2.3rem 3.2rem;
+        padding-right: 0;
+        .service{
+            display: flex;
+        }
+        .icon__{
+            background: $mainColor ;
+            width: 25px ;
+            height: 25px ;
+            padding: 10px ;
+            margin-right: 10px ;
+            box-sizing: content-box;
+            border-radius: 50% ;
+            svg{
+                fill: white ;
+            }
+        }
+
+        .body-service{
+            .title{
+                font-family: $fontBold;
+                color: black ;
+            }
+            .link{
+                color: $btnColor;
+            }
+        }
+    }
+}
+
+
+.find-service{
+    max-width: 550px ;
+    margin: -9rem auto 3rem ;
+    .input-2{
+        display: flex;
+        justify-content: space-between;
+        select{
+            flex-basis: 77% !important  ;
+        }
+
+        .input-style{
+            flex-basis: 20% ;
+        }
+
+        select, input{
+            border: 1px solid rgb(196, 196, 196);
+        }
+
+        ::-webkit-inner-spin-button{
+            display: none ;
+        }
+    }
+}
+
+
+.content-serv{
+    .title{
+        color: $address;
+        font-family: $fontBold ;
+        font-size: 1.8rem ;
+        margin: 0 ;
+    }
+
+    .para-serv{
+        font-size: 17px ;
+        color: rgb(99, 98, 98);
+    }
+}
+
+
+.content-recall-car{
+    display: flex;
+    align-items: center ;
+    padding: 0rem 1rem ;
+    font-size: 14px ;
+    transition: box-shadow .2s ;
+    .img-content{
+        width: 40% ;
+    }
+    .details-content{
+        padding: 0 10px ;
+    }
+    .title-car{
+        color: black ;
+        font-family: $fontBold;
+        font-size: 16px ;
+        margin: 0 ;
+    }
+
+    .date{
+        display: block ;
+        font-size: 13px ;
+        color: grey;
+    }
+
+    .feat{
+        color: rgb(49, 49, 49);
+        font-family: $fontBold ;
+        display: block ;
+        margin: 10px 0 ;
+    }
+
+    .link-serv{
+        text-decoration: underline !important ;
+        font-family: $fontBold;
+    }
+
+
+    &:hover{
+        box-shadow:  0 0 15px rgba($color: #000000, $alpha: .1);
+
+    }
+
+}
+
+
+.btn-serv{
+    display: block;
+    margin: 2rem auto;
+    max-width: 400px ;
+    font-family: $fontBold;
+    border: 1px solid $mainColor;
+    background: none ;
+    color: $mainColor ;
+    transition: all .2s ;
+    &:hover{
+        background-color: $mainColor ;
+        color: white ;
+    }
+}
+
+
+.content-serv{
+    margin-bottom: 8rem ;
+    .repair-link{
+        display: flex;
+        background-color: rgb(241, 241, 241);
+        padding: 5px 10px;
+        .icon-serv{
+            margin-right: 10px ;
+            img{
+                width: 18px ;
+            }
+        }
+
+        .arrow-right{
+            width: 12px ;
+        }
+
+        .arrow-right{
+            margin-left: auto;
+        }
+
+        &:nth-child(even){
+            background-color: transparent ;
+        }
+    }
+}
+
+.tips-service{
+    .title{
+        padding: 2rem 0 ;
+    }
+
+    .content-tips{
+        .title-tips{
+            font-family: $fontBold ;
+            margin: 10px 0 ;
+            color: black ;
+            font-size: 21px ;
+        }
+
+        .para-tips{
+            color: grey;
+            line-height: 1.6;
+        }
+    }
+}
+
+
+.content-train{
+    .row{
+        display: flex;
+    align-items: center ;
+    }
+
+    .link-train{
+        display: block ;
+        margin: 1rem 0;
+    }
+}

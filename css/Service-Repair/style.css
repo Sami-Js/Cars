@@ -1,0 +1,272 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.head-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(transparent)), url(../../assets/img/background-service.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent), url(../../assets/img/background-service.jpg);
+  background-size: cover;
+}
+
+.head-page .address-page {
+  text-align: center;
+  font-family: "Sans SemiBold";
+}
+
+.search-car {
+  background-color: #fff;
+  color: black;
+  z-index: -1;
+  max-width: 975px;
+  top: -15rem;
+  -webkit-box-shadow: 0 0px 29px rgba(0, 0, 0, 0.155);
+          box-shadow: 0 0px 29px rgba(0, 0, 0, 0.155);
+}
+
+.search-car .content-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem;
+}
+
+.search-car .left-side {
+  text-align: center;
+  width: 45%;
+  background: #142850;
+  color: white;
+  padding: 1.5rem 3.2rem;
+}
+
+.search-car .left-side .title {
+  font-family: "Sans SemiBold";
+  text-align: inherit;
+}
+
+.search-car .left-side .para {
+  text-align: inherit;
+  font-size: 15px;
+  color: #a7a7a7;
+}
+
+.search-car .right-side {
+  width: 55%;
+  padding: 2.3rem 3.2rem;
+  padding-right: 0;
+}
+
+.search-car .right-side .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search-car .right-side .icon__ {
+  background: #142850;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin-right: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 50%;
+}
+
+.search-car .right-side .icon__ svg {
+  fill: white;
+}
+
+.search-car .right-side .body-service .title {
+  font-family: "Sans SemiBold";
+  color: black;
+}
+
+.search-car .right-side .body-service .link {
+  color: #00909e;
+}
+
+.find-service {
+  max-width: 550px;
+  margin: -9rem auto 3rem;
+}
+
+.find-service .input-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.find-service .input-2 select {
+  -ms-flex-preferred-size: 77% !important;
+      flex-basis: 77% !important;
+}
+
+.find-service .input-2 .input-style {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.find-service .input-2 select, .find-service .input-2 input {
+  border: 1px solid #c4c4c4;
+}
+
+.find-service .input-2 ::-webkit-inner-spin-button {
+  display: none;
+}
+
+.content-serv .title {
+  color: #452888;
+  font-family: "Sans SemiBold";
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.content-serv .para-serv {
+  font-size: 17px;
+  color: #636262;
+}
+
+.content-recall-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 1rem;
+  font-size: 14px;
+  -webkit-transition: -webkit-box-shadow .2s;
+  transition: -webkit-box-shadow .2s;
+  transition: box-shadow .2s;
+  transition: box-shadow .2s, -webkit-box-shadow .2s;
+}
+
+.content-recall-car .img-content {
+  width: 40%;
+}
+
+.content-recall-car .details-content {
+  padding: 0 10px;
+}
+
+.content-recall-car .title-car {
+  color: black;
+  font-family: "Sans SemiBold";
+  font-size: 16px;
+  margin: 0;
+}
+
+.content-recall-car .date {
+  display: block;
+  font-size: 13px;
+  color: grey;
+}
+
+.content-recall-car .feat {
+  color: #313131;
+  font-family: "Sans SemiBold";
+  display: block;
+  margin: 10px 0;
+}
+
+.content-recall-car .link-serv {
+  text-decoration: underline !important;
+  font-family: "Sans SemiBold";
+}
+
+.content-recall-car:hover {
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-serv {
+  display: block;
+  margin: 2rem auto;
+  max-width: 400px;
+  font-family: "Sans SemiBold";
+  border: 1px solid #142850;
+  background: none;
+  color: #142850;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-serv:hover {
+  background-color: #142850;
+  color: white;
+}
+
+.content-serv {
+  margin-bottom: 8rem;
+}
+
+.content-serv .repair-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+}
+
+.content-serv .repair-link .icon-serv {
+  margin-right: 10px;
+}
+
+.content-serv .repair-link .icon-serv img {
+  width: 18px;
+}
+
+.content-serv .repair-link .arrow-right {
+  width: 12px;
+}
+
+.content-serv .repair-link .arrow-right {
+  margin-left: auto;
+}
+
+.content-serv .repair-link:nth-child(even) {
+  background-color: transparent;
+}
+
+.tips-service .title {
+  padding: 2rem 0;
+}
+
+.tips-service .content-tips .title-tips {
+  font-family: "Sans SemiBold";
+  margin: 10px 0;
+  color: black;
+  font-size: 21px;
+}
+
+.tips-service .content-tips .para-tips {
+  color: grey;
+  line-height: 1.6;
+}
+
+.content-train .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-train .link-train {
+  display: block;
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=style.css.map */
