@@ -1,0 +1,305 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.progressbar {
+  margin: 3rem 0;
+  padding: 0;
+  counter-reset: step;
+  position: relative;
+  z-index: -1;
+}
+
+.progressbar li {
+  list-style-type: none;
+  width: calc(100% / 5);
+  float: left;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+
+.progressbar li:before {
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 45px;
+  font-size: 18px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progressbar li:after {
+  width: 100%;
+  height: 4px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 22px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active {
+  color: #00909e;
+}
+
+.progressbar li.active:before {
+  background-color: #00909e;
+  color: white;
+  border: none;
+}
+
+.progressbar li.active + li:after {
+  background-color: #00909e;
+}
+
+.progressbar .checked {
+  color: #69b969 !important;
+}
+
+.progressbar li.checked + li:after {
+  background-color: #69b969;
+}
+
+.progressbar .checked::before {
+  background-color: #69b969 !important;
+  background: url(../../assets/svg/icons8-checkmark.svg) no-repeat center center;
+  content: '';
+  background-size: 19px 19px;
+}
+
+.breadcrumb {
+  padding: 0;
+}
+
+.title-para {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.title-offer {
+  color: #452888;
+  font-family: "Sans SemiBold";
+}
+
+.accordion {
+  margin: 0;
+  width: 100%;
+}
+
+.collapse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: grey;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.collapse-header:hover {
+  color: #142850;
+  text-decoration: none !important;
+}
+
+.collapse-header .collapse-arrow {
+  background: url(../../assets/svg/small-down-arrow-icon-15593.png) no-repeat center center;
+  background-size: 22px 22px;
+  width: 20px;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  height: 20px;
+  background-origin: content-box;
+}
+
+.label-style {
+  display: block;
+  margin-top: 1.5rem;
+  font-family: "Sans SemiBold";
+}
+
+.btn-style {
+  font-family: unset;
+  font-size: 16px;
+  margin: 1.5rem 0;
+}
+
+.container-article .label-move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #6b6a6a;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-article .label-move label {
+  padding: .5rem .5rem;
+  margin: 2rem 1.5rem 0;
+  cursor: pointer;
+  font-family: "Sans SemiBold";
+}
+
+.container-article .label-move label:hover {
+  color: black;
+}
+
+.container-article .label-move .active {
+  font-size: 17px;
+  color: #142850;
+  border-bottom: 3px solid #00909e;
+}
+
+.actived .collapse-header .Title-head {
+  font-family: "Sans SemiBold";
+  color: #452888;
+  text-decoration: none !important;
+}
+
+.actived .collapse-arrow {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.accordion {
+  margin: 12rem 0 0;
+}
+
+.title-car {
+  font-family: "Sans SemiBold";
+  color: #142850;
+  margin-bottom: 2rem;
+}
+
+.container-check {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-check .check-1 {
+  margin-top: .8rem;
+}
+
+.style-file {
+  position: relative;
+  text-align: center;
+}
+
+.style-file label {
+  color: #3939e4;
+  font-family: "Sans SemiBold";
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}
+
+.file-style {
+  height: 160px;
+  cursor: pointer;
+  width: 200px;
+  border: dashed 2px #ddd;
+  position: relative;
+}
+
+.file-style::after {
+  position: absolute;
+  content: attr(data-value);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: "Sans SemiBold";
+}
+
+.file-style::-webkit-file-upload-button {
+  visibility: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn-previous {
+  background: transparent;
+  color: #00909e;
+  font-family: "Sans SemiBold";
+  border: 1px solid #00909e;
+}
+
+.btn-previous:hover {
+  background: #00909e;
+  color: white;
+}
+
+.information {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.information:last-child {
+  border: none;
+}
+
+.information .title {
+  font-family: "Sans SemiBold";
+  font-size: 21px;
+  color: #585858;
+  display: inline;
+}
+
+.information ._value {
+  font-family: "Sans SemiBold";
+}
+
+.information .title-edit {
+  display: flex-root;
+}
+
+.information .title-edit a {
+  float: right;
+}
+
+footer {
+  margin-top: 7rem;
+}
+/*# sourceMappingURL=style.css.map */
