@@ -1,0 +1,68 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.data-user {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title-label {
+  padding: 0;
+  margin-top: 3rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.title-label label {
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  margin: 0 20px;
+  cursor: pointer;
+  color: grey;
+}
+
+.title-label label:hover {
+  color: black;
+}
+
+.title-label label.active {
+  color: black;
+  border-bottom: 3px solid #452888;
+  font-family: "Sans SemiBold";
+}
+
+.address {
+  color: #452888;
+  margin: 1.2rem 0;
+  font-size: 1.8rem;
+}
+
+.title-setting {
+  font-size: 19px;
+  margin-bottom: 12px;
+  font-family: "Sans SemiBold";
+}
+
+.data-style {
+  width: 100%;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-style:last-child {
+  border: none;
+}
+
+.data-style .btn-link {
+  float: right;
+  background-color: transparent;
+}
+/*# sourceMappingURL=setting.css.map */

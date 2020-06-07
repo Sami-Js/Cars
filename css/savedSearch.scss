@@ -1,0 +1,167 @@
+@import '../css/variables.scss';
+
+.address{
+    font-size: 2.1rem ;
+    margin: 0;
+    margin: 2rem 0 .5rem;
+    color: $address;
+}
+
+.para{
+    text-align: center ;
+    margin: 0 ;
+    color: rgb(105, 105, 105);
+    margin-bottom: 1rem ;
+}
+
+
+.start-search{
+    background-color: rgb(231, 231, 231) ;
+    padding: 3rem 0 ;
+    .title-saved{
+        font-family: $fontBold ;
+        margin-bottom: 2rem ;
+    }
+
+    .box-search{
+        background-color: white ;
+        padding: 3rem;
+        border: 2px dashed #AAA;
+        svg{
+            width: 250px ;
+            margin: 0 auto ;
+            display: block;
+        }
+
+        .title-form{
+            text-align: center;
+            font-family: $fontBold;
+            margin: 1rem 0;
+        }
+
+        form{
+            label{
+                font-family: $fontBold;
+            }
+
+            .btn-style{
+                margin: .5rem auto;
+                width: 30% ;
+            }
+
+            
+        }
+
+        .hint{
+            color: grey;
+            text-align: center;
+            display: block;
+            font-size: 15px ;
+            margin-top: 1rem ;
+        }
+    }
+}
+
+
+
+.saved-search{
+    background-color: white ;
+    margin-top: 1rem ;
+    .title-saved{
+        margin: 1rem 0 0;
+    }
+    .box-search{
+        border: none;
+        svg { display: none }   
+        .title-form{
+            display: none ;
+        }         
+    }
+}
+
+
+
+.content-cards{
+    background: rgb(235, 235, 235);
+    padding: 2rem 0;
+    .length-saved{
+        text-align: center ;
+        display: block;
+        font-size: 1.5rem ;
+        font-family: $fontBold;
+        color: rgb(10, 10, 10);
+        span{
+            font-family: inherit;
+        }
+    }
+
+    .hint-card{
+        width: 70% ;
+        text-align: center;
+        margin: 1rem auto;
+        display: block;
+    }
+
+    .card{
+        .date{
+            padding: .5rem .8rem ;
+            border-bottom: 1px solid $borderColor ;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            i{
+                color: black;
+                font-size: 20px;
+                color: rgb(211, 65, 65);
+            }
+        }
+
+        .details{
+            padding: .5rem .8rem ;
+            border-top: 1px solid $borderColor ;
+        }
+        .title{
+            font-size: 1.3rem;
+            font-family: $fontBold;
+            margin: 0;
+        }
+
+        .available-car{
+            font-size: 14px ;
+            margin: 5px 0;
+        }
+
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px ;
+        }
+        .tag-name{
+            text-transform: uppercase;
+            margin-right: 10px ;
+            background: #DDD ;
+            padding: 5px 14px ;
+            font-size: 12px;
+            font-family: $fontBold;
+        }
+    }
+}
+
+
+.manage-mail{
+    padding: 1rem 0 ;
+    margin-top: 2rem ;
+    border-top: 1px solid $borderColor ;
+    h3{
+        text-align: center;
+        font-family: $fontBold;
+        font-size: 1.4rem ;
+        color: $address;
+    }
+
+    button{
+        background-color: $mainColor ;
+        font-family: $fontReg;
+    }
+
+}

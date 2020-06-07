@@ -1,0 +1,186 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.address {
+  font-size: 2.1rem;
+  margin: 0;
+  margin: 2rem 0 .5rem;
+  color: #452888;
+}
+
+.para {
+  text-align: center;
+  margin: 0;
+  color: dimgray;
+  margin-bottom: 1rem;
+}
+
+.start-search {
+  background-color: #e7e7e7;
+  padding: 3rem 0;
+}
+
+.start-search .title-saved {
+  font-family: "Sans SemiBold";
+  margin-bottom: 2rem;
+}
+
+.start-search .box-search {
+  background-color: white;
+  padding: 3rem;
+  border: 2px dashed #AAA;
+}
+
+.start-search .box-search svg {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+}
+
+.start-search .box-search .title-form {
+  text-align: center;
+  font-family: "Sans SemiBold";
+  margin: 1rem 0;
+}
+
+.start-search .box-search form label {
+  font-family: "Sans SemiBold";
+}
+
+.start-search .box-search form .btn-style {
+  margin: .5rem auto;
+  width: 30%;
+}
+
+.start-search .box-search .hint {
+  color: grey;
+  text-align: center;
+  display: block;
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.saved-search {
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.saved-search .title-saved {
+  margin: 1rem 0 0;
+}
+
+.saved-search .box-search {
+  border: none;
+}
+
+.saved-search .box-search svg {
+  display: none;
+}
+
+.saved-search .box-search .title-form {
+  display: none;
+}
+
+.content-cards {
+  background: #ebebeb;
+  padding: 2rem 0;
+}
+
+.content-cards .length-saved {
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  font-family: "Sans SemiBold";
+  color: #0a0a0a;
+}
+
+.content-cards .length-saved span {
+  font-family: inherit;
+}
+
+.content-cards .hint-card {
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+  display: block;
+}
+
+.content-cards .card .date {
+  padding: .5rem .8rem;
+  border-bottom: 1px solid #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-cards .card .date i {
+  color: black;
+  font-size: 20px;
+  color: #d34141;
+}
+
+.content-cards .card .details {
+  padding: .5rem .8rem;
+  border-top: 1px solid #ddd;
+}
+
+.content-cards .card .title {
+  font-size: 1.3rem;
+  font-family: "Sans SemiBold";
+  margin: 0;
+}
+
+.content-cards .card .available-car {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.content-cards .card .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.content-cards .card .tag-name {
+  text-transform: uppercase;
+  margin-right: 10px;
+  background: #DDD;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-family: "Sans SemiBold";
+}
+
+.manage-mail {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+.manage-mail h3 {
+  text-align: center;
+  font-family: "Sans SemiBold";
+  font-size: 1.4rem;
+  color: #452888;
+}
+
+.manage-mail button {
+  background-color: #142850;
+  font-family: "Sans Regular";
+}
+/*# sourceMappingURL=savedSearch.css.map */

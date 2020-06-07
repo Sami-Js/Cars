@@ -1,0 +1,59 @@
+@import '../css/variables.scss';
+
+.data-user{
+    max-width: 500px ;
+    margin: 0 auto;
+}
+
+
+.title-label{
+    padding: 0 ;
+    margin-top: 3rem ;
+    text-align: center;
+    border-bottom: 1px solid $borderColor ;
+    label{
+        padding: .5rem 1rem ;
+        font-size: 1.2rem;
+        margin: 0 20px;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+
+        color: grey;
+        &.active{
+            color: black;
+            border-bottom: 3px solid $address  ;
+            font-family: $fontBold ;
+        }   
+    }
+}
+
+
+.address{
+    color: $address;
+    margin: 1.2rem 0;
+    font-size: 1.8rem;
+}
+
+
+.title-setting{
+    font-size: 19px ;
+    margin-bottom: 12px;
+    font-family: $fontBold;
+
+}
+
+.data-style{
+    width: 100% ;
+    padding-bottom: 2rem ;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid $borderColor ;
+    &:last-child{
+        border: none ;
+    }
+    .btn-link{
+        float: right;
+        background-color: transparent;
+    }
+}
