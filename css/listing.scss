@@ -1,0 +1,247 @@
+@import "../css/variables.scss";
+
+.left-side {
+  width: 70%;
+  .btn-select:last-child {
+    background-color: $mainColor;
+    margin-bottom: 10rem;
+    &.disable {
+      background-color: rgb(189, 189, 189);
+      cursor: no-drop;
+    }
+  }
+}
+
+.part-content:last-of-type {
+  .label-style {
+    margin: 2rem 0 0;
+    font-size: 17px;
+  }
+
+  .row {
+    margin-top: 1rem;
+  }
+
+  .list-do {
+    list-style: disc;
+  }
+
+  .title-list {
+    font-family: $fontBold;
+    color: rgb(41, 179, 41);
+  }
+
+  .dont-do {
+    color: red;
+  }
+}
+
+.main-title {
+  padding: 2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    color: $address;
+    font-family: $fontBold;
+    font-size: 2rem;
+  }
+}
+
+.btn-package {
+  display: none;
+}
+
+.steps {
+  display: inline-block;
+  width: 100%;
+
+  .progressbar li:after {
+    left: -90%;
+  }
+
+  .progressbar {
+    display: flex;
+  }
+
+  .progressbar li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .progressbar li::before {
+    margin: 0 10px 11px;
+  }
+}
+
+.title-input {
+  font-family: $fontBold;
+  font-size: 1.1rem;
+}
+
+.optional {
+  font-size: 13px;
+  color: grey;
+}
+
+.btn-style {
+  margin: 2rem 0;
+  font-size: unset;
+}
+
+.label-style {
+  font-family: $fontBold;
+  margin-top: 1.6rem;
+}
+
+.part-content {
+  border-top: 1px solid $borderColor;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.save-info {
+  margin: 1rem 0;
+  display: block;
+}
+
+.hint-info {
+  margin: 1rem 0 0;
+  border-bottom: 1px solid $borderColor;
+  color: grey;
+  display: block;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.para-info {
+  color: grey;
+}
+
+.check-1 {
+  display: block;
+  margin-top: 1rem;
+  .title-label {
+    display: inherit;
+    font-family: $fontBold;
+  }
+
+  div {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+// main .my_container{
+//     position: relative;
+// }
+
+.right-side {
+  position: sticky;
+  right: 0;
+  top: 5rem;
+  // background-color: red ;
+  width: 30%;
+  float: right;
+  background: #f2f2f2;
+  padding: 1rem;
+
+  .head-cart {
+    font-size: 1.5rem;
+    color: $address;
+  }
+
+  .head-cart,
+  .body-cart {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  .body-cart,
+  .footer-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+// page Review and submit
+
+.box-review {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid $borderColor;
+  .imges {
+    position: relative;
+    flex-basis: 13rem;
+    #len-photos {
+      margin: 5px 5px;
+      font-family: $fontBold;
+    }
+  }
+
+  .details-rev {
+    padding: 1rem;
+    flex: 1;
+    .nameCar {
+      font-size: 1.4rem;
+      font-family: $fontBold;
+    }
+    .price-mil {
+      font-size: 1.6rem;
+      .mile {
+        color: grey;
+        font-size: 13px;
+      }
+    }
+
+    .feat-car {
+      margin: 1rem 0;
+      .feat {
+        margin-top: 10px;
+      }
+    }
+  }
+  .seller-data {
+    padding: 1rem;
+    border-left: 1px dashed $borderColor;
+  }
+}
+
+
+.order-info{
+    .label-style{
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .link-move{
+        float: right;
+    }
+}
+
+.para-bold{
+    font-family: $fontBold ;
+}
+
+.title-rev{
+    margin-bottom: .8rem ;
+    font-family: $fontBold;
+    color: $address;
+}
+
+
+@media (max-width: 860px) {
+  .right-side {
+    display: none;
+  }
+
+  .btn-package {
+    display: block;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+}

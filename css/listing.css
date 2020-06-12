@@ -1,0 +1,274 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.left-side {
+  width: 70%;
+}
+
+.left-side .btn-select:last-child {
+  background-color: #142850;
+  margin-bottom: 10rem;
+}
+
+.left-side .btn-select:last-child.disable {
+  background-color: #bdbdbd;
+  cursor: no-drop;
+}
+
+.part-content:last-of-type .label-style {
+  margin: 2rem 0 0;
+  font-size: 17px;
+}
+
+.part-content:last-of-type .row {
+  margin-top: 1rem;
+}
+
+.part-content:last-of-type .list-do {
+  list-style: disc;
+}
+
+.part-content:last-of-type .title-list {
+  font-family: "Sans SemiBold";
+  color: #29b329;
+}
+
+.part-content:last-of-type .dont-do {
+  color: red;
+}
+
+.main-title {
+  padding: 2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-title h2 {
+  color: #452888;
+  font-family: "Sans SemiBold";
+  font-size: 2rem;
+}
+
+.btn-package {
+  display: none;
+}
+
+.steps {
+  display: inline-block;
+  width: 100%;
+}
+
+.steps .progressbar li:after {
+  left: -90%;
+}
+
+.steps .progressbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steps .progressbar li {
+  width: 100%;
+  text-align: left;
+}
+
+.steps .progressbar li::before {
+  margin: 0 10px 11px;
+}
+
+.title-input {
+  font-family: "Sans SemiBold";
+  font-size: 1.1rem;
+}
+
+.optional {
+  font-size: 13px;
+  color: grey;
+}
+
+.btn-style {
+  margin: 2rem 0;
+  font-size: unset;
+}
+
+.label-style {
+  font-family: "Sans SemiBold";
+  margin-top: 1.6rem;
+}
+
+.part-content {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.save-info {
+  margin: 1rem 0;
+  display: block;
+}
+
+.hint-info {
+  margin: 1rem 0 0;
+  border-bottom: 1px solid #ddd;
+  color: grey;
+  display: block;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.para-info {
+  color: grey;
+}
+
+.check-1 {
+  display: block;
+  margin-top: 1rem;
+}
+
+.check-1 .title-label {
+  display: inherit;
+  font-family: "Sans SemiBold";
+}
+
+.check-1 div {
+  display: block;
+  margin: 10px 0;
+}
+
+.right-side {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 5rem;
+  width: 30%;
+  float: right;
+  background: #f2f2f2;
+  padding: 1rem;
+}
+
+.right-side .head-cart {
+  font-size: 1.5rem;
+  color: #452888;
+}
+
+.right-side .head-cart,
+.right-side .body-cart {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.right-side .body-cart,
+.right-side .footer-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.box-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid #ddd;
+}
+
+.box-review .imges {
+  position: relative;
+  -ms-flex-preferred-size: 13rem;
+      flex-basis: 13rem;
+}
+
+.box-review .imges #len-photos {
+  margin: 5px 5px;
+  font-family: "Sans SemiBold";
+}
+
+.box-review .details-rev {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.box-review .details-rev .nameCar {
+  font-size: 1.4rem;
+  font-family: "Sans SemiBold";
+}
+
+.box-review .details-rev .price-mil {
+  font-size: 1.6rem;
+}
+
+.box-review .details-rev .price-mil .mile {
+  color: grey;
+  font-size: 13px;
+}
+
+.box-review .details-rev .feat-car {
+  margin: 1rem 0;
+}
+
+.box-review .details-rev .feat-car .feat {
+  margin-top: 10px;
+}
+
+.box-review .seller-data {
+  padding: 1rem;
+  border-left: 1px dashed #ddd;
+}
+
+.order-info .label-style {
+  margin-bottom: 0;
+  display: block;
+}
+
+.order-info .link-move {
+  float: right;
+}
+
+.para-bold {
+  font-family: "Sans SemiBold";
+}
+
+.title-rev {
+  margin-bottom: .8rem;
+  font-family: "Sans SemiBold";
+  color: #452888;
+}
+
+@media (max-width: 860px) {
+  .right-side {
+    display: none;
+  }
+  .btn-package {
+    display: block;
+  }
+  .left-side {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=listing.css.map */

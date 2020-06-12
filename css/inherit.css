@@ -193,6 +193,7 @@ main {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
+  height: 100%;
 }
 
 .nav_bar .main-nav .nav-list .list-item {
