@@ -193,6 +193,7 @@ main {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
+  height: 100%;
 }
 
 .nav_bar .main-nav .nav-list .list-item {
@@ -366,6 +367,7 @@ main {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    height: 32rem !important;
   }
   .main-nav ul li .list-link {
     color: black !important;
@@ -471,6 +473,16 @@ footer .terms a:hover {
 footer .terms .copyR {
   font-size: 14px;
   float: right;
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
 }
 
 body, html {

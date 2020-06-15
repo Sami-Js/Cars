@@ -14,65 +14,61 @@
 </head>
 
 <body>
-
-    <!-- navabar -->
-    <nav class="nav_bar">
+     <!-- navabar -->
+     <nav class="nav_bar">
         <div class="my_container">
             <!-- has logo and btn menu burger -->
             <div class="header-nav">
-                <a href="index.html" class="logo">Cars</a>
+                <a href="../index.html" class="logo">Cars</a>
 
                 <img class="icon_" src="../../assets/svg/menu-outline.svg" id="show_nav" alt="Menu">
             </div>
+    <!-- has list and close btn -->
+    <div class="main-nav" id="navbar">
+        <img class="icon_ close" id="closeNav" src="../../assets/svg/close-outline.svg" alt="close_nav">
+        <ul class="nav-list">
+            <li class="list-item"><a class="list-link" href="../carForsell.html">Cars of Sale</a></li>
+            <li class="list-item"><a class="list-link" href="../SellYourCar.html">Sell your Car</a></li>
+            <li class="list-item"><a class="list-link" href="../service&Repair.html">Service & Repair</a></li>
+            <li class="list-item"><a class="list-link" href="../researchPage.html">Research</a></li>
+            <li class="list-item"><a class="list-link" href="../Video&Reviews.html">Videos & Reviews</a></li>
+            <li class="list-item"><a class="list-link" href="#">Contact Us</a></li>
+            <li class="list-item">
+                <a href="../signIn.html" class="btn btn-effect">Sign Up</a></li>
+            <li class="list-item profile" id="profile"><a href="#">
+                    <img class="icon_" src="../../assets/svg/Profile.svg" alt="Profile">
+                </a>
+                <div class="content-profile" data-modal='false' id="content-profile">
+                    <div class="first-section">
+                        <p class="text-mute">
+                            Save cars. Access them anywhere.
+                        </p>
+                        <a class="btn-secondry btn-effect" href="../signIn.html">Sign Up</a>
+                        <span class="logIn">
+                            Already have an account? <a href="../signIn.html">Log In</a>
+                        </span>
+                    </div>
 
-
-            <!-- has list and close btn -->
-            <div class="main-nav" id="navbar">
-                <img class="icon_ close" id="closeNav" src="../../assets/svg/close-outline.svg" alt="close_nav">
-                <ul class="nav-list">
-                    <li class="list-item"><a class="list-link" href="#">Cars of Sale</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Sell your Car</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Service & Repair</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Research</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Videos & Reviews</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Contact Us</a></li>
-                    <li class="list-item">
-                        <a href="#" class="btn btn-effect">Sign Up</a></li>
-                    <li class="list-item profile" id="profile"><a href="#">
-                            <img class="icon_" src="../../assets/svg/Profile.svg" alt="Profile">
+                    <div class="last-section">
+                        <a href="../Dashboard.html" class="movement">
+                            <img class="icon_" src="../../assets/svg/person.svg" alt="Dashboard">
+                            <span> My Dashboard</span>
                         </a>
-                        <div class="content-profile" data-modal='false' id="content-profile">
-                            <div class="first-section">
-                                <p class="text-mute">
-                                    Save cars. Access them anywhere.
-                                </p>
-                                <button class="btn-secondry btn-effect">Sign Up</button>
-                                <span class="logIn">
-                                    Already have an account? <a href="#">Log In</a>
-                                </span>
-                            </div>
-
-                            <div class="last-section">
-                                <a href="#" class="movement">
-                                    <img class="icon_" src="../../assets/svg/person.svg" alt="Dashboard">
-                                    <span> My Dashboard</span>
-                                </a>
-                                <a href="#" class="movement">
-                                    <img class="icon_" src="../../assets/svg/car.svg" alt="saved-car">
-                                    <span>My Car Saved (<span>5</span>)</span>
-                                </a>
-                                <a href="#" class="movement">
-                                    <img class="icon_" src="../../assets/svg/search.svg" alt="Search-save">
-                                    <span>My Car Saved (<span>5</span>)</span>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+                        <a href="" class="movement">
+                            <img class="icon_" src="../../assets/svg/car.svg" alt="saved-car">
+                            <span>My Car Saved (<span>5</span>)</span>
+                        </a>
+                        <a href="#" class="movement">
+                            <img class="icon_" src="../../assets/svg/search.svg" alt="Search-save">
+                            <span>My Car Saved (<span>5</span>)</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
 
 
     <main>
@@ -488,7 +484,7 @@
 
                         <!-- btn has className : disable -->
 
-                        <button class="btn-select w-50 ">Next Step</button>
+                        <a class="btn-select w-50 d-block" href="ReviewandSubmit.html" >Next Step</a>
                     </form>
                 </div>
 

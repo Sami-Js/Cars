@@ -26,14 +26,14 @@
             <div class="main-nav" id="navbar">
                 <img class="icon_ close" id="closeNav" src="../assets/svg/close-outline.svg" alt="close_nav">
                 <ul class="nav-list">
-                    <li class="list-item"><a class="list-link" href="#">Cars of Sale</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Sell your Car</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Service & Repair</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Research</a></li>
-                    <li class="list-item"><a class="list-link" href="#">Videos & Reviews</a></li>
+                    <li class="list-item"><a class="list-link" href="carForsell.html">Cars of Sale</a></li>
+                    <li class="list-item"><a class="list-link" href="SellYourCar.html">Sell your Car</a></li>
+                    <li class="list-item"><a class="list-link" href="service&Repair.html">Service & Repair</a></li>
+                    <li class="list-item"><a class="list-link" href="researchPage.html">Research</a></li>
+                    <li class="list-item"><a class="list-link" href="Video&Reviews.html">Videos & Reviews</a></li>
                     <li class="list-item"><a class="list-link" href="#">Contact Us</a></li>
                     <li class="list-item">
-                        <a href="#" class="btn btn-effect">Sign Up</a></li>
+                        <a href="signIn.html" class="btn btn-effect">Sign Up</a></li>
                     <li class="list-item profile" id="profile"><a href="#">
                             <img class="icon_" src="../assets/svg/Profile.svg" alt="Profile">
                         </a>
@@ -42,9 +42,9 @@
                                 <p class="text-mute">
                                     Save cars. Access them anywhere.
                                 </p>
-                                <button class="btn-secondry btn-effect">Sign Up</button>
+                                <button class="btn-secondry btn-effect" href="signIn.html">Sign Up</button>
                                 <span class="logIn">
-                                    Already have an account? <a href="#">Log In</a>
+                                    Already have an account? <a href="signIn.html">Log In</a>
                                 </span>
                             </div>
 
@@ -73,11 +73,11 @@
     <main class="container-sign">
         <div class="my_container">
             <div class="header-label">
-                <label class="active">Log in</label>
-                <label>Sign Up</label>
+                <label id="signIn">Log in</label>
+                <label class="active" id="signUp">Sign Up</label>
             </div>
 
-            <div class="container-signup">
+            <div class="container-signup" id="container-signup">
                 <a href="#" class="btn-facebook">Sign Up With Facebook</a>
 
                 <div class="content-form">
@@ -88,12 +88,12 @@
                         <h5 class="address-form">Sign Up With Email</h5>
 
                         <div class="input-style">
-                            <label for="email">Email</label>
-                            <input id="email" type="text" placeholder="enter your mail" class="input-style">
+                            <label for="emlSignUp">Email</label>
+                            <input id="emlSignUp" type="text" placeholder="enter your mail" class="input-style">
                         </div>
                         <div class="input-style">
-                            <label for="Password">Password</label>
-                            <input id="Password" type="password" placeholder="enter your Password" class="input-style">
+                            <label for="pwdSignup">Password</label>
+                            <input id="pwdSignup" type="password" placeholder="enter your Password" class="input-style">
                         </div>
                         <div class="input-style">
                             <label for="confirmP">Confirm Password</label>
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="container-signin d-none">
+            <div class="container-signin d-none" id="container-signin">
                 <a href="#" class="btn-facebook">Sign in With Facebook</a>
 
                 <div class="content-form">
@@ -207,6 +207,40 @@
 
 
     <script src="../js/main.js"></script>
+
+
+    <script>
+
+
+        const element = elm => document.querySelector(elm);
+
+        const signIn = element('#signIn');
+        const containerSignIn = element('#container-signin');
+
+
+        const signUp = element('#signUp');
+        const containerSignUp = element('#container-signup');
+
+
+        function clicker(elementEvent, ContainerShow, ContainerHide, nameElementRemoveClass) {
+            elementEvent.addEventListener('click' , function (){
+                  this.className = 'active' ;
+                  nameElementRemoveClass.className = ''
+
+                ContainerShow.classList.remove('d-none');
+                ContainerHide.classList.add('d-none');
+            })
+        }
+
+
+        clicker(signIn, containerSignIn, containerSignUp, signUp);
+
+        clicker(signUp , containerSignUp , containerSignIn , signIn )
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -131,7 +131,13 @@
     }
 }
 
-
+.packages .content-package > * .btn-select{
+    display: flex;
+    justify-content: center ;
+    &:hover{
+        color: white ;
+    }
+}
 
 
 .overley-circle{

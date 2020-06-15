@@ -193,6 +193,7 @@ main {
   -webkit-box-align: auto;
       -ms-flex-align: auto;
           align-items: auto;
+  height: 100%;
 }
 
 .nav_bar .main-nav .nav-list .list-item {
@@ -366,6 +367,7 @@ main {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    height: 32rem !important;
   }
   .main-nav ul li .list-link {
     color: black !important;
@@ -1048,6 +1050,10 @@ select, .cb-style {
   margin-bottom: 3rem;
 }
 
+.btn-effect {
+  display: block;
+}
+
 @media (max-width: 850px) {
   .container-inputs > * {
     width: 50%;
@@ -1172,6 +1178,16 @@ select, .cb-style {
   background: url(../../assets/svg/icons8-checkmark.svg) no-repeat center center;
   content: '';
   background-size: 19px 19px;
+}
+
+.inputs-select .input-style {
+  background-color: white !important;
+}
+
+.container-inputs .inputs-select:last-of-type input {
+  -ms-flex-item-align: normal;
+      -ms-grid-row-align: normal;
+      align-self: normal;
 }
 
 @media (max-width: 700px) {
