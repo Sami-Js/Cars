@@ -1,0 +1,243 @@
+@font-face {
+  src: url("../assets/font/SourceSansPro-Regular.ttf");
+  font-family: "Sans Regular";
+}
+
+@font-face {
+  src: url("../assets/font/SourceSansPro-SemiBold.ttf");
+  font-family: "Sans SemiBold";
+}
+
+.movement-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movement-link .right-side {
+  font-size: 1.2rem;
+}
+
+.movement-link .right-side a {
+  color: #4242c7;
+  font-family: "Sans SemiBold";
+}
+
+.content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.content-title .title-page {
+  font-size: 3.1rem;
+  margin-right: 10px;
+}
+
+.content-title a {
+  margin-bottom: 5px;
+}
+
+.top-rank {
+  margin-top: 2rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8))), url(../assets/img/HomePage.jpg) no-repeat center center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8)), url(../assets/img/HomePage.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 300px;
+  color: white;
+}
+
+.top-rank .title {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+  font-family: "Sans SemiBold";
+}
+
+.top-rank .title-news {
+  font-size: 1.2rem;
+  font-family: "Sans SemiBold";
+}
+
+.top-rank ul a {
+  font-size: 1rem;
+}
+
+.cars-box {
+  background-color: #f2f2f2;
+  padding: 3rem 0;
+}
+
+.cars-box .link-Dis {
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  color: #452888;
+}
+
+.cars-box .container-card-car {
+  padding: 10px;
+}
+
+.cars-box .car-model {
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+.cars-box .details {
+  padding: .8rem;
+  border-top: 1px solid #ddd;
+}
+
+.cars-box .details .title-car {
+  font-size: 1.3rem;
+  font-family: "Sans SemiBold";
+}
+
+.cars-box .btns-car {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.cars-box .btns-car > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+  padding: .5rem 0;
+  background-color: transparent;
+}
+
+.cars-box .btns-car > *:last-child {
+  border-left: 1px solid #ddd;
+}
+
+.cars-box .btns-car > *:hover {
+  font-family: "Sans SemiBold";
+  background-color: #ebe9e9;
+}
+
+.content-img {
+  height: 209px;
+}
+
+.para-card {
+  margin-top: 10px;
+  color: grey;
+  line-height: 1.6;
+}
+
+.name_car {
+  font-family: "Sans SemiBold";
+}
+
+.date-card {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.style-cards {
+  padding: 3rem 0;
+}
+
+.style-cards .title-card {
+  text-align: center;
+  font-family: "Sans SemiBold";
+  margin-bottom: 1.5rem;
+}
+
+.style-cards .btn-style {
+  width: 30%;
+  background: transparent;
+  color: #00909e;
+  border: 1px solid #00909e;
+}
+
+.style-cards .btn-style:hover {
+  background: #00909e;
+  color: white;
+}
+
+.last-vid {
+  background: #f2f2f2;
+}
+
+.address-card {
+  font-family: "Sans SemiBold";
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.content-story {
+  background-color: white;
+}
+
+.content-story .details {
+  background: inherit;
+  padding: 1rem;
+}
+
+.content-story .details .address_car {
+  color: black;
+  font-size: 1.1rem;
+  font-family: "Sans SemiBold";
+}
+
+.content-story .details .list-disc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: grey;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-story .details .list-disc li::after {
+  content: '|';
+  margin: 10px;
+  opacity: .4;
+}
+
+.lists-model {
+  padding: 2rem 0;
+}
+
+.lists-model span {
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+  display: block;
+}
+
+.lists-model .title-card {
+  color: #452888;
+  font-size: 1.5rem;
+  font-family: "Sans SemiBold" !important;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.lists-model .main-list li {
+  margin: .7rem 0;
+  text-align: center;
+}
+
+#ReasearchModel {
+  background-color: #f2f2f2;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=carResearch.css.map */

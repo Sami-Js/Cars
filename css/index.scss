@@ -135,7 +135,7 @@ main{
     font-size: 16px;
     text-align: center;
     border: none;
-    padding: 8px 0;
+    padding: 9px 0;
     border-radius: 0 0 3px 0;
   }
 }
@@ -680,6 +680,41 @@ padding: 2rem 0;
 }
 
 
+
+.overley-circle {
+  position: relative;
+  background-color: rgb(107, 161, 157);
+  .hasPlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 100%;
+    svg {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      fill: #fff;
+      border-radius: 50% ;
+      padding: 1.5rem;
+      box-sizing: content-box;
+      transition: background-color .3s ;
+      background-color: rgba(0, 0, 0, 0.479);
+    }
+  }
+
+
+  &:hover{
+      .hasPlay{
+          svg{
+              background-color: rgb(46, 45, 45) ;
+          }
+      }
+  }
+}
 
 
 // end style progrees 

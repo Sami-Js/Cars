@@ -1,0 +1,219 @@
+@import 'variables.scss';
+
+.movement-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    .right-side{
+        font-size: 1.2rem ;
+        a {
+            color: rgb(66, 66, 199);
+            font-family: $fontBold ;
+        }
+    }
+}
+
+.content-title{
+    display: flex;
+    align-items: flex-end;
+    .title-page{
+        font-size: 3.1rem ;
+        margin-right: 10px ;
+    }
+    a{
+        margin-bottom: 5px ;
+    }
+}
+
+.top-rank{
+    margin-top: 2rem ;
+    background: linear-gradient(to top , rgba(0,0,0,.8)) , url(../assets/img/HomePage.jpg) no-repeat center center ;
+    background-size: cover;
+    min-height: 300px ;
+    color: white;
+    .title{
+        display: block;
+        text-align: center;
+        padding: 2rem 0;
+        color: white ;
+        font-family: $fontBold  ;
+    }
+
+    .title-news{
+        font-size: 1.2rem ;
+        font-family: $fontBold ;
+    }
+
+    ul a{
+        font-size: 1rem ;
+    }
+}
+
+.cars-box{
+    background-color: #f2f2f2 ;
+    padding: 3rem 0;
+    .link-Dis{
+        display: block;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.2rem ;
+        color: $address ;
+    }
+
+    .container-card-car{
+        padding: 10px ;
+    }
+
+    .car-model{
+        border: 1px solid $borderColor ;
+        background-color: white;
+    }
+
+    .details{
+        padding: .8rem ;
+        border-top: 1px solid $borderColor;
+        .title-car{
+            font-size: 1.3rem ;
+            font-family: $fontBold ;
+        }
+
+       
+    }
+
+    .btns-car{
+        display: flex;
+        border-top: 1px solid $borderColor;
+        & > * {
+            flex-basis: 50% ;
+            text-align: center;
+            padding: .5rem 0;
+            background-color: transparent;
+            &:last-child{
+                border-left: 1px solid $borderColor;
+            }
+
+            &:hover{
+                font-family: $fontBold;
+                background-color: $bgSection;
+            }
+        }
+    }
+}
+
+
+.content-img{
+    height: 209px ;
+}
+
+
+
+.para-card{
+    margin-top: 10px ;
+    color: grey ;
+    line-height: 1.6;
+}
+
+.name_car{
+    font-family: $fontBold;
+}
+
+
+.date-card{
+    margin-bottom: 1rem ;
+    display: block;
+}
+
+.style-cards{
+    padding: 3rem 0;
+    .title-card{
+        text-align: center;
+        font-family: $fontBold ;
+        margin-bottom: 1.5rem ;
+
+    }
+
+
+    .btn-style{
+        width: 30% ;
+        background: transparent;
+        color: $btnColor ;
+        border: 1px solid $btnColor;
+        &:hover{
+            background: $btnColor;
+            color: white ;
+        }
+    }
+}
+
+
+.last-vid{
+    background: #f2f2f2;
+}
+
+
+.address-card{
+    font-family: $fontBold;
+    font-size: 1.2rem ;
+    margin: 0;
+}
+
+
+.content-story{
+    background-color: white ;
+    .details{
+        background: inherit;
+        padding: 1rem ;
+        .address_car{
+            color: black ;
+            font-size: 1.1rem ;
+            font-family: $fontBold ;
+            
+        }
+
+        .list-disc{
+            display: flex;
+            font-size: 14px ;
+            color: grey ;
+            align-items: center;
+            li{
+                    &::after{
+                    content: '|';
+                    margin: 10px  ;
+                    opacity: .4 ;
+                }
+            }
+        }
+    }
+}
+
+
+.lists-model{
+    padding: 2rem 0;
+    span{
+        text-align: center ;
+        font-size: 15px ;
+        color: grey ;
+        display: block ;
+    }
+    .title-card{
+        color: $address;
+        font-size: 1.5rem ;
+        font-family: $fontBold !important ;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+
+    .main-list{
+        li{
+            margin: .7rem 0;
+            text-align: center;
+        }
+    }
+}
+
+
+#ReasearchModel{
+    background-color: #f2f2f2;
+    margin-bottom: 2rem ;
+}
